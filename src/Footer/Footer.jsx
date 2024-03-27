@@ -3,7 +3,7 @@ import FooterImg from "../assets/footer.jpg";
 import logo from "../assets/logo.svg";
 import Icon_7 from "../assets/Icon7.svg";
 import Icon_8 from "../assets/Icon8.svg";
-import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   return (

@@ -35,17 +35,20 @@ function Home() {
   return (
     <div>
       <Navbar />
+
+      {/* Header */}
+
       <div
-        className=" h-[900px] bg-no-repeat bg-top bg-contain flex justify-end"
+        className="  bg-no-repeat bg-center bg-cover flex justify-end"
         style={{ backgroundImage: `url(${BgImg})` }}
       >
-        <div className="flex items-center">
-          <div className="w-2/4	 ">
+        <div className="flex items-center justify-center m-auto pt-28 pb-28">
+          <div className="w-2/5	">
             <p className="text-white text-lg">
               Logistics & Supply Chain Solutions
             </p>
-            <h1 className="text-white text-6xl font-bold py-2">
-              Your Gateway <br></br>to any Destination<br></br> in the World
+            <h1 className="text-white text-[3.4vw] font-bold py-2 leading-none">
+              Your Gateway to any Destination in the World
             </h1>
             <p className="text-white text-lg py-4">
               In augue ligula, feugiat ut nulla consequat. Ut est lacus,
@@ -57,7 +60,7 @@ function Home() {
               Explore More
             </button>
           </div>
-          <div className="w-3/5	bg-gray-500"></div>
+          <div className="w-2/5	bg-gray-500"></div>
         </div>
       </div>
       <div className="flex items-center justify-evenly w-[80%] m-auto h-[400px]">
@@ -118,10 +121,11 @@ function Home() {
         </div>
       </div>
 
-      <div
-        className=" h-[550px] bg-no-repeat bg-center bg-contain flex justify-end"
-        style={{ backgroundImage: `url(${BgImg1})` }}
-      ></div>
+      {/* Why Us*/}
+
+      <div className="">
+        <img src={BgImg1} alt="" />
+      </div>
       <div className="flex justify-center -mt-28">
         <div className="w-[500px] px-10 bg-white pt-14">
           <p className="bg-gray-200 py-1 px-3 border-l-4 border-yellow-400 w-24">
@@ -172,12 +176,15 @@ function Home() {
           Satisfied Clients
         </div>
       </div>
+
+      {/* Across the World */}
+
       <div className="py-10">
         <h1 className="text-2xl font-bold text-[#1C1F35] text-center">
           Transporting Across The World
         </h1>
       </div>
-      <div className="w-4/5	m-auto flex justify-evenly gap-4 items-center pb-10">
+      <div className="w-full	m-auto flex flex-wrap justify-center gap-4 items-center pb-10 ">
         <div className="relative">
           <img src={P1} alt="" />
           <div className="absolute left-8 top-[300px] text-left ">
@@ -240,6 +247,8 @@ function Home() {
           More Work
         </button>
       </div>
+
+ {/* Testimonials */}
 
       <div className="flex items-center justify-between py-5 w-[1000px] m-auto">
         <div>
@@ -308,6 +317,8 @@ function Home() {
         </div>
       </div>
 
+ {/* Why Choose */}
+
       <div className="flex items-center py-16">
         <div className="w-1/2 bg-[#091242] flex items-center justify-end h-[600px] relative">
           <img className="absolute -right-14" src={Img3} alt="" />
@@ -359,6 +370,8 @@ function Home() {
         </div>
       </div>
 
+      {/* Meet Our Team*/}
+
       <div>
         <h1 className="bg-gray-300 border-l-4 border-yellow-500  my-2 text-center w-40 m-auto">
           The Transporters
@@ -366,7 +379,7 @@ function Home() {
         <p className="text-4xl font-bold my-4 text-center text-[#1C1F35] ">
           Meet Experts Team
         </p>
-        <div className="flex justify-center gap-14 py-10">
+        <div className="flex justify-center gap-14 py-10 flex-wrap">
           <div>
             <img src={Expert1} alt="" />
             <div className="h-24 bg-blue-950 text-white w-[364px] py-6 absolute">
@@ -405,6 +418,8 @@ function Home() {
           </div>
         </div>
       </div>
+
+ {/* Contact Us */}
 
       <div className="flex py-16 justify-center gap-10 bg-[#091242] my-8">
         <div className="w-[500px] pl-[100px]">
@@ -493,6 +508,8 @@ function Home() {
           </button>
         </div>
       </div>
+
+ {/* Our Blogs */}
 
       <div>
         <h1 className="bg-gray-300 border-l-4 border-yellow-500  my-2 text-center w-40 m-auto ">
@@ -586,7 +603,7 @@ function Home() {
           </button>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
