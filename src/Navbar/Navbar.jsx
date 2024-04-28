@@ -83,7 +83,7 @@ function Navbar() {
             <button className="bg-white text-black py-3 px-1 sm:hidden mb-5 mt-10 w-7/12">
               Request Quote
             </button>
-
+            
           </div>
           <div className="text-white flex sm:gap-3 items-center gap-[200px]">
             <div className="px-5 sm:flex gap-3 sm:items-center hidden">
