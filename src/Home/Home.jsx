@@ -42,30 +42,30 @@ function Home() {
         className="  bg-no-repeat bg-center bg-cover flex justify-end"
         style={{ backgroundImage: `url(${BgImg})` }}
       >
-        <div className="flex items-center justify-center m-auto pt-28 pb-28">
-          <div className="w-2/5	">
-            <p className="text-white text-lg">
+        <div className="flex items-center sm:justify-center justify-around m-auto pt-28 pb-28">
+          <div className="sm:w-2/5	w-2/3">
+            <p className="text-white sm:text-lg text-sm">
               Logistics & Supply Chain Solutions
             </p>
-            <h1 className="text-white text-[3.4vw] font-bold py-2 leading-none">
+            <h1 className="text-white sm:text-[3.4vw] font-bold sm:py-2 leading-none text-4xl pt-4 pb-8">
               Your Gateway to any Destination in the World
             </h1>
-            <p className="text-white text-lg py-4">
+            <p className="text-white text-lg py-4 hidden sm:block">
               In augue ligula, feugiat ut nulla consequat. Ut est lacus,
               molestie in arcu no, iaculis vehicula ipsum. Nunc faucibus, nisl
               id dapibus finibus, enim diam interdum nulla, sed laoreet risus
               lectus.
             </p>
-            <button className=" bg-gradient-to-r from-yellow-400 to-yellow-500 py-4 px-6">
+            <button className=" bg-gradient-to-r from-yellow-400 to-yellow-500 py-4 px-6 text-xl">
               Explore More
             </button>
           </div>
-          <div className="w-2/5	bg-gray-500"></div>
+          <div className="sm:w-2/5	bg-gray-500"></div>
         </div>
       </div>
-      <div className="flex items-center justify-evenly w-[80%] m-auto h-[400px]">
+      <div className="flex items-center justify-evenly w-[80%] m-auto  flex-col sm:flex-row sm:py-14 py-10">
         <div>
-          <p className="bg-gray-200 py-1 px-3 border-l-4 border-yellow-400 w-32">
+          <p className="bg-gray-200 py-1 px-3 border-l-4 border-yellow-400 w-32 mb-4 sm:mb-0">
             What we do
           </p>
           <h2 className="text-4xl font-bold	text-[#1C1F35]	py-2">
@@ -126,15 +126,15 @@ function Home() {
       <div className="">
         <img src={BgImg1} alt="" />
       </div>
-      <div className="flex justify-center -mt-28">
-        <div className="w-[500px] px-10 bg-white pt-14">
+      <div className="flex justify-center -mt-28 flex-col sm:flex-row">
+        <div className="sm:w-[500px] sm:px-10  px-4 bg-white pt-14">
           <p className="bg-gray-200 py-1 px-3 border-l-4 border-yellow-400 w-24">
             Why Us
           </p>
-          <h3 className="text-4xl font-bold	text-[#1C1F35]	py-2">
+          <h3 className="sm:text-4xl text-2xl font-bold	text-[#1C1F35]	py-2">
             We provide full range global logistics solution
           </h3>
-          <p>
+          <p className="text-base ">
             Leverage agile frameworks to provide a robust synopsis for strategy
             foster collaborative thinking to further the overall value
             proposition. Organically grow the holistic world view of disruptive
@@ -155,22 +155,22 @@ function Home() {
             </span>
           </div>
         </div>
-        <div className="px-16 bg-white w-[600px] py-14">
-          <img className="absolute" src={Image1} alt="" />
+        <div className="sm:px-16 px-8 bg-white sm:w-[600px] sm:py-14 py-6">
+          <img className="sm:absolute" src={Image1} alt="" />
           <img
-            className="relative top-[250px] right-[50px] "
+            className="sm:relative top-[250px] right-[50px]"
             src={Image2}
             alt=""
           />
         </div>
       </div>
-      <div className="flex  justify-center py-10">
-        <div className="flex items-center justify-center  gap-5 font-lg py-10 px-10 border-r-2 border-t-2 border-b-2">
+      <div className="flex flex-col sm:flex-row justify-center py-10 ">
+        <div className="flex flex-col sm:flex-row items-center justify-center  gap-5 font-lg py-10 px-10 border-r-2 border-t-2 border-b-2">
           <span className="text-4xl font-bold ">1294</span>
           <img src={box} alt="" />
           Delivered Packages
         </div>
-        <div className="flex items-center justify-center  gap-5 font-lg py-10 px-10  border-t-2 border-b-2">
+        <div className="flex flex-col sm:flex-row items-center justify-center  gap-5 font-lg py-10 px-10  border-t-2 border-b-2">
           <span className="text-4xl font-bold	">3594</span>
           <img src={box} alt="" />
           Satisfied Clients
@@ -179,8 +179,8 @@ function Home() {
 
       {/* Across the World */}
 
-      <div className="py-10">
-        <h1 className="text-2xl font-bold text-[#1C1F35] text-center">
+      <div className="sm:py-10 py-3">
+        <h1 className="sm:text-2xl text-4xl font-bold text-[#1C1F35] text-center px-5 sm:px-0 leading-[45px]">
           Transporting Across The World
         </h1>
       </div>
@@ -242,15 +242,15 @@ function Home() {
         </div>
       </div>
 
-      <div className="bg-gradient-to-r from-yellow-500 to-yellow-300 h-[320px] text-center flex items-center justify-center -mt-[80px]">
+      <div className="bg-gradient-to-r from-yellow-500 to-yellow-300 sm:h-[320px] h-[120px] text-center flex items-center justify-center sm:-mt-[80px]">
         <button className=" bg-gradient-to-r from-blue-900 to-blue-700 py-4 px-6 text-white ">
           More Work
         </button>
       </div>
 
- {/* Testimonials */}
+      {/* Testimonials */}
 
-      <div className="flex items-center justify-between py-5 w-[1000px] m-auto">
+      <div className="flex items-center justify-between py-5 sm:w-[1000px] m-auto px-4 sm:px-0">
         <div>
           <h1 className="bg-[#F4F4F4] border-l-4 border-yellow-500 pl-2 w-28">
             Testimonial
@@ -262,8 +262,8 @@ function Home() {
         </div>
       </div>
 
-      <div className="flex items-center justify-center">
-        <div className="bg-[#F4F4F4] py-6 px-10 w-[500px] ">
+      <div className="flex items-center justify-center flex-wrap">
+        <div className="bg-[#F4F4F4] py-6 px-10 sm:w-[500px] ">
           <div className="flex justify-evenly py-4">
             <div className="flex items-center">
               <img src={User_1} alt="" />
@@ -289,7 +289,7 @@ function Home() {
             <img src={Star} alt="" />
           </div>
         </div>
-        <div className="bg-[#091242] py-6 px-10 w-[500px] ">
+        <div className="bg-[#091242] py-6 px-10 sm:w-[500px] flex-wrap ">
           <div className="flex justify-evenly py-4">
             <div className="flex items-center">
               <img src={User_1} alt="" />
@@ -317,14 +317,14 @@ function Home() {
         </div>
       </div>
 
- {/* Why Choose */}
+      {/* Why Choose */}
 
-      <div className="flex items-center py-16">
-        <div className="w-1/2 bg-[#091242] flex items-center justify-end h-[600px] relative">
-          <img className="absolute -right-14" src={Img3} alt="" />
+      <div className="flex sm:flex-row flex-col items-center py-16">
+        <div className="sm:w-1/2 bg-[#091242] flex items-center justify-end sm:h-[600px] relative">
+          <img className="sm:absolute -right-14" src={Img3} alt="" />
         </div>
-        <div className="w-1/2 bg-[#F4F4F4] py-5 h-[600px] flex items-center">
-          <div className="w-[500px] pl-[100px]">
+        <div className="sm:w-1/2 bg-[#F4F4F4] py-5 sm:h-[600px] flex items-center px-4 sm:px-0">
+          <div className="sm:w-[500px] sm:pl-[100px]">
             <h1 className="bg-gray-300 border-l-4 border-yellow-500 pl-2 my-2 py-1 w-28">
               Why Choose
             </h1>
@@ -419,10 +419,10 @@ function Home() {
         </div>
       </div>
 
- {/* Contact Us */}
+      {/* Contact Us */}
 
-      <div className="flex py-16 justify-center gap-10 bg-[#091242] my-8">
-        <div className="w-[500px] pl-[100px]">
+      <div className="flex sm:flex-row flex-col py-16 justify-center gap-10 bg-[#091242] my-8 px-4 sm:px-0">
+        <div className="sm:w-[500px] sm:pl-[100px]">
           <h1 className="bg-gray-300 border-l-4 border-yellow-500 pl-2 my-1 w-20 ">
             Contact
           </h1>
@@ -434,7 +434,7 @@ function Home() {
             foster collaborative thinking to further the overall value
             proposition.
           </p>
-          <div className="flex">
+          <div className="sm:flex hidden">
             <div className="py-4 text-white">
               <div className="flex  items-center gap-2 pb-3">
                 <img src={Icon_7} alt="" />
@@ -451,7 +451,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="pt-12">
+        <div className="sm:pt-12 pt-0">
           <div className="flex">
             <div>
               <label htmlFor="username"></label>
@@ -509,7 +509,7 @@ function Home() {
         </div>
       </div>
 
- {/* Our Blogs */}
+      {/* Our Blogs */}
 
       <div>
         <h1 className="bg-gray-300 border-l-4 border-yellow-500  my-2 text-center w-40 m-auto ">
@@ -519,7 +519,7 @@ function Home() {
           Our Latest News
         </p>
 
-        <div className="flex w-[1000px] m-auto justify-evenly  py-8 px-2 border-t-2 border-gray-300">
+        <div className="flex flex-col sm:flex-row sm:w-[1000px] m-auto justify-evenly  py-8 px-2 border-t-2 border-gray-300">
           <div className=" ">
             <img src={Blog1} alt="" />
           </div>
@@ -529,7 +529,7 @@ function Home() {
               08<p className="font-normal text-xl">September</p>
             </p>
           </div>
-          <div className="w-1/3 border-l-2 border-gray-300 pl-5">
+          <div className="sm:w-1/3 border-l-2 border-gray-300 pl-5">
             <p className="text-2xl font-semibold ">
               Inland freight a worthy solution for your business
             </p>
@@ -545,7 +545,7 @@ function Home() {
             </ul>
           </div>
         </div>
-        <div className="flex w-[1000px] m-auto justify-evenly  py-8 px-2 border-t-2 border-gray-300">
+        <div className="flex flex-col sm:flex-row sm:w-[1000px] m-auto justify-evenly  py-8 px-2 border-t-2 border-gray-300">
           <div className=" ">
             <img src={Blog1} alt="" />
           </div>
@@ -555,7 +555,7 @@ function Home() {
               12<p className="font-normal text-xl">September</p>
             </p>
           </div>
-          <div className="w-1/3 border-l-2 border-gray-300 pl-5">
+          <div className="sm:w-1/3 border-l-2 border-gray-300 pl-5">
             <p className="text-2xl font-semibold ">
               Inland freight a worthy solution for your business
             </p>
@@ -571,7 +571,7 @@ function Home() {
             </ul>
           </div>
         </div>
-        <div className="flex w-[1000px] m-auto justify-evenly  py-8 px-2 border-t-2 border-b-2 border-gray-300">
+        <div className="flex flex-col sm:flex-row sm:w-[1000px] m-auto justify-evenly  py-8 px-2 border-t-2 border-b-2 border-gray-300">
           <div className=" ">
             <img src={Blog1} alt="" />
           </div>
@@ -581,7 +581,7 @@ function Home() {
               25<p className="font-normal text-xl">September</p>
             </p>
           </div>
-          <div className="w-1/3 border-l-2 border-gray-300 pl-5">
+          <div className="sm:w-1/3 border-l-2 border-gray-300 pl-5">
             <p className="text-2xl font-semibold ">
               Inland freight a worthy solution for your business
             </p>

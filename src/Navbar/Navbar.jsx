@@ -3,6 +3,8 @@ import logo from "../assets/logo.svg";
 import { CiClock1, CiMail } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
 import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
+
 
 function Navbar() {
   return (
@@ -11,7 +13,7 @@ function Navbar() {
         <div>
           <img src={logo} alt="" className="text-sm" />
         </div>
-        <div className="flex gap-4">
+        <div className="sm:flex sm:gap-4 hidden">
           <div className=" flex items-center gap-2 text-white">
             <div className="bg-[#273270] py-3 px-3 rounded-full">
               <CiClock1 className=" text-[#F6B426] text-2xl" />
@@ -34,7 +36,7 @@ function Navbar() {
       </div>
       <div className="absolute  w-[-webkit-fill-available]">
         <div className=" text-white flex justify-evenly items-center mb-[-56px] relative z-10">
-          <div className=" flex ">
+          <div className=" sm:flex hidden">
             <a href="#" className="border-r-2 px-5 ">
               Home
             </a>
@@ -51,8 +53,8 @@ function Navbar() {
               Home
             </a>
           </div>
-          <div className="text-white flex gap-3 items-center ">
-            <div className="px-5 flex gap-3 items-center">
+          <div className="text-white flex sm:gap-3 items-center gap-[200px]">
+            <div className="px-5 sm:flex gap-3 sm:items-center hidden">
               <FaInstagram />
               <FaFacebook />
               <FaLinkedin />
@@ -61,9 +63,12 @@ function Navbar() {
             <button className="bg-white text-black py-4 px-4">
               Request Quote
             </button>
+            <div className="sm:hidden text-4xl">
+              <GiHamburgerMenu/>
+            </div>
           </div>
         </div>
-        <div className="bg-[#091242] opacity-50 relative mb-[-56px] h-14">holle</div>
+        <div className="bg-[#091242] opacity-50 relative mb-[-56px] h-14">Hello</div>
       </div>
     </div>
   );
