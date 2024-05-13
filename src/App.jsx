@@ -1,10 +1,12 @@
 import Home from "./Home/Home";
+import Our_services from "./Our_Services/Our_services";
 
 function App() {
   return (
     <>
       <div>
-        <Home />
+        {/*   <Home />   */}
+        <Our_services />
       </div>
     </>
   );

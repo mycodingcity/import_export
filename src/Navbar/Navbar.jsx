@@ -68,16 +68,16 @@ function Navbar() {
               Home
             </a>
             <a href="#" className="border-r-2 px-5 ">
-              Home
+              About
             </a>
             <a href="#" className="border-r-2 px-5 ">
-              Home
+              Services
             </a>
             <a href="#" className="border-r-2 px-5 ">
-              Home
+              Projects
             </a>
             <a href="#" className="border-r-2 px-5 ">
-              Home
+              Contact
             </a>
 
             <button className="bg-white text-black py-3 px-1 sm:hidden mb-5 mt-10 w-7/12">

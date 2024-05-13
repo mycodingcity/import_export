@@ -26,7 +26,7 @@ import Icon_7 from "../assets/Icon7.svg";
 import Icon_8 from "../assets/Icon8.svg";
 import Icon_9 from "../assets/Icon9.svg";
 import Expert1 from "../assets/expert1.jpg";
-import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Blog1 from "../assets/Blog1.jpg";
 import Calender from "../assets/calender.svg";
 import Footer from "../Footer/Footer";
