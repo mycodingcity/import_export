@@ -1,10 +1,21 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 import BgImg from "../assets/our_services.jpg";
 import Icon_1 from "../assets/Icon1.svg";
 import Icon_2 from "../assets/Icon2.svg";
 import Icon_3 from "../assets/Icon3.svg";
 import Icon_4 from "../assets/Icon4.svg";
+import Image1 from "../assets/Image_4.jpg";
+import Image2 from "../assets/Image_3.jpg";
+import Icon_5 from "../assets/Icon5.svg";
+import Icon_6 from "../assets/Icon6.svg";
+import User_1 from "../assets/User1.png";
+import Quote from "../assets/quote.svg";
+import Blue_Arrow from "../assets/arrow1.svg";
+import Yellow_Arrow from "../assets/arrow2.svg";
+import Star from "../assets/Star.png";
+import box from "../assets/Pattern.svg";
 
 function Our_services() {
   return (
@@ -115,6 +126,153 @@ function Our_services() {
           </button>
         </div>
       </div>
+
+      {/* Our Services */}
+      <div className=" bg-[#F4F4F4] py-10 ">
+        <div>
+          <p className="bg-gray-200 py-1 px-3 border-l-4 border-yellow-400 w-36 text-center m-auto">
+            Our Services
+          </p>
+          <h1 className="text-2xl m-auto text-center py-2">How We Works</h1>
+        </div>
+        <div className="flex justify-center  flex-col sm:flex-row w-[70%] py-10 m-auto">
+          <div className="relative w-2/5">
+            <img className="" src={Image1} alt="" />
+            <img
+              className="absolute bottom-0 right-0 w-[35%]"
+              src={Image2}
+              alt=""
+            />
+          </div>
+          <div className="pl-10 w-2/5">
+            <div className="flex  items-center gap-5 py-5">
+              <img src={Icon_5} alt="" />
+              <div>
+                <h1 className="text-2xl  items-center">Warehousing Services</h1>
+                <p>
+                  Leverage agile frameworks to provide a robust synopsis for
+                  strategy foster collaborative thinking
+                </p>
+              </div>
+            </div>
+            <div className="flex  items-center gap-5 pb-5">
+              <img src={Icon_6} alt="" />
+              <div>
+                <h1 className="text-2xl  items-center">Safety & Quality</h1>
+                <p>
+                  Leverage agile frameworks to provide a robust synopsis for
+                  strategy foster collaborative thinking
+                </p>
+              </div>
+            </div>
+            <div className="flex  items-center gap-5 pb-5">
+              <img src={Icon_6} alt="" />
+              <div>
+                <h1 className="text-2xl  items-center">Care for Environment</h1>
+                <p>
+                  Leverage agile frameworks to provide a robust synopsis for
+                  strategy foster collaborative thinking
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Testimonials */}
+      <div className="py-16">
+        <div className="flex items-center justify-between py-5 sm:w-[1000px] m-auto px-4 sm:px-0">
+          <div>
+            <h1 className="bg-[#F4F4F4] border-l-4 border-yellow-500 pl-2 w-28">
+              Testimonial
+            </h1>
+            <p className="text-2xl font-bold">What Our Customer Say</p>
+          </div>
+          <div className="flex">
+            <img src={Yellow_Arrow} alt="" /> <img src={Blue_Arrow} alt="" />
+          </div>
+        </div>
+
+        <div className="flex items-center justify-center flex-wrap">
+          <div className="bg-[#F4F4F4] py-6 px-10 sm:w-[500px] ">
+            <div className="flex justify-evenly py-4">
+              <div className="flex items-center">
+                <img src={User_1} alt="" />
+                <p className="text-2xl font-medium px-4 leading-none">
+                  Rakesh Singh
+                  <br />
+                  <span className="text-base font-medium">Fuel Company</span>
+                </p>
+              </div>
+              <img src={Quote} alt="" />
+            </div>
+            <p>
+              Leverage agile frameworks to provide a robust synopsis for
+              strategy foster collaborative thinking to further the overall
+              value proposition. Organically grow the holistic world view of
+              disruptive innovation via workplace diversity and empowerment.
+            </p>
+            <div className="flex gap-2 py-4">
+              <img src={Star} alt="" />
+              <img src={Star} alt="" />
+              <img src={Star} alt="" />
+              <img src={Star} alt="" />
+              <img src={Star} alt="" />
+            </div>
+          </div>
+          <div className="bg-[#091242] py-6 px-10 sm:w-[500px] flex-wrap ">
+            <div className="flex justify-evenly py-4">
+              <div className="flex items-center">
+                <img src={User_1} alt="" />
+                <p className="text-2xl font-medium px-4 leading-none text-white">
+                  Rakesh Singh
+                  <br />
+                  <span className="text-base font-medium">Fuel Company</span>
+                </p>
+              </div>
+              <img src={Quote} alt="" />
+            </div>
+            <p className="text-white">
+              Leverage agile frameworks to provide a robust synopsis for
+              strategy foster collaborative thinking to further the overall
+              value proposition. Organically grow the holistic world view of
+              disruptive innovation via workplace diversity and empowerment.
+            </p>
+            <div className="flex gap-2 py-4">
+              <img src={Star} alt="" />
+              <img src={Star} alt="" />
+              <img src={Star} alt="" />
+              <img src={Star} alt="" />
+              <img src={Star} alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/*  */}
+
+      <div className="flex flex-col sm:flex-row justify-center py-10 ">
+        <div className="flex flex-col sm:flex-row items-center justify-center  gap-5 font-lg py-10 px-10 border-r-2 border-t-2 border-b-2">
+          <span className="text-4xl font-bold ">94</span>
+          <img src={box} alt="" />
+          Our Location
+        </div>
+        <div className="flex flex-col sm:flex-row items-center justify-center  gap-5 font-lg py-10 px-10 border-r-2 border-t-2 border-b-2">
+          <span className="text-4xl font-bold ">1294</span>
+          <img src={box} alt="" />
+          Delivered Packages
+        </div>
+        <div className="flex flex-col sm:flex-row items-center justify-center  gap-5 font-lg py-10 px-10 border-r-2 border-t-2 border-b-2">
+          <span className="text-4xl font-bold	">3594</span>
+          <img src={box} alt="" />
+          Satisfied Clients
+        </div>
+        <div className="flex flex-col sm:flex-row items-center justify-center  gap-5 font-lg py-10 px-10  border-t-2 border-b-2">
+          <span className="text-4xl font-bold	">247</span>
+          <img src={box} alt="" />
+          Owned Vehicles
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
