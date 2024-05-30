@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 import BgImg from "../assets/our_services.jpg";
 import Icon_call from "../assets/c_call.png";
 import Icon_sms from "../assets/c_sms.png";
@@ -8,6 +9,7 @@ import img_1 from "../assets/c_img1.png";
 import img_2 from "../assets/c_img2.png";
 import img_3 from "../assets/c_img3.png";
 import img_4 from "../assets/c_img4.png";
+import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 
 function Contact() {
   return (
@@ -110,6 +112,7 @@ function Contact() {
                 className="ring-1 focus:ring-0 w-full placeholder:text-white placeholder:px-2 placeholder:py-1 h-24 bg-transparent"
               />
             </div>
+
             <div className="m-auto text-center py-4">
               <button className=" bg-gradient-to-r from-yellow-400 to-yellow-500 py-4 px-6 ">
                 Submit Message
@@ -139,6 +142,77 @@ function Contact() {
           className=" border-t-[1px] border-b-[1px] border-blue-900"
         />
       </div>
+
+      {/* Faq */}
+
+      <div className="bg-[#F4F4F4]">
+        <div className="py-20  m-auto flex  justify-center gap-10">
+          <div className="w-[500px]">
+            <p className="bg-gray-200 py-1 px-3 border-l-4 border-yellow-400 w-20 mb-4 sm:mb-0  ">
+              FAQ
+            </p>
+            <h2 className="text-2xl font-bold	py-2 m-auto pb-10">
+              Frequently Asked <br /> Questions
+            </h2>
+            <div>
+              <div className="flex items-center justify-between py-2 cursor-pointer">
+                <h1 className="text-lg font-medium">
+                  How can I pay for your logistics services?
+                </h1>
+                <IoIosArrowDown />
+              </div>
+              <p className="py-2">
+                Leverage agile frameworks to provide a robust synopsis for
+                strategy foster collaborative thinking to further the overall
+                value proposition. Organically grow the holistic world view of
+                disruptive.
+              </p>
+              <div className="flex items-center justify-between py-2 cursor-pointer">
+                <h1 className="text-lg font-medium">
+                  What payment methods are supported?
+                </h1>
+                <IoIosArrowForward />
+              </div>
+              <div className="flex items-center justify-between py-2 cursor-pointer">
+                <h1 className="text-lg font-medium">
+                  What options for logistics plans are available?
+                </h1>
+                <IoIosArrowForward />
+              </div>
+              <div className="flex items-center justify-between py-2 cursor-pointer">
+                <h1 className="text-lg font-medium">
+                  Can i specify a delivery date when ordering?
+                </h1>
+                <IoIosArrowForward />
+              </div>
+            </div>
+          </div>
+          <div className="bg-[#091242] py-8 px-12">
+            <p className="bg-[#ececec2c] py-1 px-3 border-l-4 border-yellow-400 w-24 mb-4  text-white ">
+              Let's Talk
+            </p>
+            <div className="text-white text-xl">
+              You need any help? get free consultation
+            </div>
+            <div className="flex py-4 m-auto items-center gap-4">
+              <div>
+                <img src={Icon_call} alt="" />
+              </div>
+              <div className="text-white">
+                <p>Have Any Questions</p>
+                123456789
+              </div>
+            </div>
+            <div className=" py-4">
+              <button className=" bg-gradient-to-r from-yellow-400 to-yellow-500 py-4 px-6 ">
+                Contact Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Footer />
     </div>
   );
 }

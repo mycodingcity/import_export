@@ -5,6 +5,7 @@ import { IoCallOutline } from "react-icons/io5";
 import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [showNav, setshowNav] = useState("translate-x-full");
@@ -64,21 +65,21 @@ function Navbar() {
           <div
             className={`sm:flex flex-col flex sm:flex-row sm:px-0 sm:py-0 sm:text-xl px-5 bg-[#F6B426] sm:bg-transparent  py-5 text-2xl ${showNav} transition-transform duration-300 sm:translate-x-0`}
           >
-            <a href="#" className="border-r-2 px-5 ">
+            <Link to="/" className="border-r-2 px-5 ">
               Home
-            </a>
-            <a href="#" className="border-r-2 px-5 ">
+            </Link>
+            <Link to="#" className="border-r-2 px-5 ">
               About
-            </a>
-            <a href="#" className="border-r-2 px-5 ">
+            </Link>
+            <Link to="/services" className="border-r-2 px-5 ">
               Services
-            </a>
-            <a href="#" className="border-r-2 px-5 ">
+            </Link>
+            <Link to="#" className="border-r-2 px-5 ">
               Projects
-            </a>
-            <a href="#" className="border-r-2 px-5 ">
+            </Link>
+            <Link to="/contact" className="border-r-2 px-5 ">
               Contact
-            </a>
+            </Link>
 
             <button className="bg-white text-black py-3 px-1 sm:hidden mb-5 mt-10 w-7/12">
               Request Quote
