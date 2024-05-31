@@ -5,7 +5,7 @@ import { IoCallOutline } from "react-icons/io5";
 import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
-import { Link } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 
 function Navbar() {
   const [showNav, setshowNav] = useState("translate-x-full");
@@ -63,28 +63,47 @@ function Navbar() {
       <div className="absolute  w-[-webkit-fill-available]">
         <div className=" text-white sm:flex justify-evenly items-center sm:mb-[-56px] sm:relative z-10">
           <div
-            className={`sm:flex flex-col flex sm:flex-row sm:px-0 sm:py-0 sm:text-xl px-5 bg-[#F6B426] sm:bg-transparent  py-5 text-2xl ${showNav} transition-transform duration-300 sm:translate-x-0`}
+            className={`sm:flex flex-col flex sm:flex-row sm:px-0 sm:py-0 sm:text-xl px-5 bg-[#F6B426] sm:bg-transparent  py-5 text-2xl ${showNav} transition-transform duration-300 sm:translate-x-0 gap-8`}
           >
-            <Link to="/" className="border-r-2 px-5 ">
+            <NavLink
+              to="/"
+              className={(e) => {
+                return e.isActive
+                  ? "border-b-2 pb-1 border-red-600  "
+                  : " pb-1 border-red-600 transition duration-300 ease-in-out hover:border-b-2";
+              }}
+            >
               Home
-            </Link>
-            <Link to="#" className="border-r-2 px-5 ">
+            </NavLink>
+            <NavLink to="#" className="">
               About
-            </Link>
-            <Link to="/services" className="border-r-2 px-5 ">
+            </NavLink>
+            <NavLink
+              to="/services"
+              className={(e) => {
+                return e.isActive
+                  ? "border-b-2 pb-1 border-red-600  "
+                  : " pb-1 border-red-600 transition duration-300 ease-in-out hover:border-b-2";
+              }}
+            >
               Services
-            </Link>
-            <Link to="#" className="border-r-2 px-5 ">
+            </NavLink>
+            <NavLink to="#" className=" ">
               Projects
-            </Link>
-            <Link to="/contact" className="border-r-2 px-5 ">
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className={(e) => {
+                return e.isActive
+                  ? "border-b-2 pb-1 border-red-600  "
+                  : " pb-1 border-red-600 transition duration-300 ease-in-out hover:border-b-2";
+              }}
+            >
               Contact
-            </Link>
-
+            </NavLink>
             <button className="bg-white text-black py-3 px-1 sm:hidden mb-5 mt-10 w-7/12">
               Request Quote
             </button>
-            
           </div>
           <div className="text-white flex sm:gap-3 items-center gap-[200px]">
             <div className="px-5 sm:flex gap-3 sm:items-center hidden">

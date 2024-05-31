@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import BgImg from "../assets/our_services.jpg";
@@ -9,9 +9,15 @@ import img_1 from "../assets/c_img1.png";
 import img_2 from "../assets/c_img2.png";
 import img_3 from "../assets/c_img3.png";
 import img_4 from "../assets/c_img4.png";
-import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 
 function Contact() {
+  const [isOpen, setOpen] = useState(false);
+
+  const ClickFaq = () => {
+    setOpen(!isOpen);
+  };
+
   return (
     <div>
       <Navbar />
@@ -155,18 +161,31 @@ function Contact() {
               Frequently Asked <br /> Questions
             </h2>
             <div>
-              <div className="flex items-center justify-between py-2 cursor-pointer">
-                <h1 className="text-lg font-medium">
+              <div
+                className="flex items-center justify-between py-2 cursor-pointer "
+                onClick={ClickFaq}
+              >
+                <h1 className="text-lg font-medium ">
                   How can I pay for your logistics services?
                 </h1>
-                <IoIosArrowDown />
+                <IoIosArrowForward
+                  className={`${isOpen ? "rotate-90" : ""} duration-200`}
+                />
               </div>
-              <p className="py-2">
-                Leverage agile frameworks to provide a robust synopsis for
-                strategy foster collaborative thinking to further the overall
-                value proposition. Organically grow the holistic world view of
-                disruptive.
-              </p>
+
+              <div
+                className={` overflow-hidden  transition-all  duration-700  ${
+                  isOpen ? "max-h-screen" : "max-h-0"
+                } `}
+              >
+                <p className="py-2">
+                  Leverage agile frameworks to provide a robust synopsis for
+                  strategy foster collaborative thinking to further the overall
+                  value proposition. Organically grow the holistic world view of
+                  disruptive.
+                </p>
+              </div>
+
               <div className="flex items-center justify-between py-2 cursor-pointer">
                 <h1 className="text-lg font-medium">
                   What payment methods are supported?
@@ -187,26 +206,28 @@ function Contact() {
               </div>
             </div>
           </div>
-          <div className="bg-[#091242] py-8 px-12">
-            <p className="bg-[#ececec2c] py-1 px-3 border-l-4 border-yellow-400 w-24 mb-4  text-white ">
-              Let's Talk
-            </p>
-            <div className="text-white text-xl">
-              You need any help? get free consultation
-            </div>
-            <div className="flex py-4 m-auto items-center gap-4">
-              <div>
-                <img src={Icon_call} alt="" />
+          <div className="">
+            <div className="bg-[#091242]  py-8 px-12">
+              <p className="bg-[#ececec2c] py-1 px-3 border-l-4 border-yellow-400 w-24 mb-4  text-white ">
+                Let's Talk
+              </p>
+              <div className="text-white text-xl">
+                You need any help? get free consultation
               </div>
-              <div className="text-white">
-                <p>Have Any Questions</p>
-                123456789
+              <div className="flex py-4 m-auto items-center gap-4">
+                <div>
+                  <img src={Icon_call} alt="" />
+                </div>
+                <div className="text-white">
+                  <p>Have Any Questions</p>
+                  123456789
+                </div>
               </div>
-            </div>
-            <div className=" py-4">
-              <button className=" bg-gradient-to-r from-yellow-400 to-yellow-500 py-4 px-6 ">
-                Contact Us
-              </button>
+              <div className=" py-4">
+                <button className=" bg-gradient-to-r from-yellow-400 to-yellow-500 py-4 px-6 ">
+                  Contact Us
+                </button>
+              </div>
             </div>
           </div>
         </div>
