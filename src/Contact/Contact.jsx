@@ -1,23 +1,18 @@
 import React, { useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import BgImg from "../assets/our_services.jpg";
+import BgImg from "../assets/our_services.webp";
 import Icon_call from "../assets/c_call.png";
 import Icon_sms from "../assets/c_sms.png";
 import Icon_time from "../assets/c_time.png";
-import img_1 from "../assets/c_img1.png";
+import img_1 from "../assets/c_img1.webp";
 import img_2 from "../assets/c_img2.png";
 import img_3 from "../assets/c_img3.png";
 import img_4 from "../assets/c_img4.png";
 import { IoIosArrowForward } from "react-icons/io";
+import MyFaq from "../Components/Faq";
 
 function Contact() {
-  const [isOpen, setOpen] = useState(false);
-
-  const ClickFaq = () => {
-    setOpen(!isOpen);
-  };
-
   return (
     <div>
       <Navbar />
@@ -120,7 +115,7 @@ function Contact() {
             </div>
 
             <div className="m-auto text-center py-4">
-              <button className=" bg-gradient-to-r from-yellow-400 to-yellow-500 py-4 px-6 ">
+              <button className=" bg-gradient-to-r from-yellow-400 to-yellow-500 py-4 px-6 hover:scale-110 duration-300 rounded-md">
                 Submit Message
               </button>
             </div>
@@ -161,49 +156,7 @@ function Contact() {
               Frequently Asked <br /> Questions
             </h2>
             <div>
-              <div
-                className="flex items-center justify-between py-2 cursor-pointer "
-                onClick={ClickFaq}
-              >
-                <h1 className="text-lg font-medium ">
-                  How can I pay for your logistics services?
-                </h1>
-                <IoIosArrowForward
-                  className={`${isOpen ? "rotate-90" : ""} duration-200`}
-                />
-              </div>
-
-              <div
-                className={` overflow-hidden  transition-all  duration-700  ${
-                  isOpen ? "max-h-screen" : "max-h-0"
-                } `}
-              >
-                <p className="py-2">
-                  Leverage agile frameworks to provide a robust synopsis for
-                  strategy foster collaborative thinking to further the overall
-                  value proposition. Organically grow the holistic world view of
-                  disruptive.
-                </p>
-              </div>
-
-              <div className="flex items-center justify-between py-2 cursor-pointer">
-                <h1 className="text-lg font-medium">
-                  What payment methods are supported?
-                </h1>
-                <IoIosArrowForward />
-              </div>
-              <div className="flex items-center justify-between py-2 cursor-pointer">
-                <h1 className="text-lg font-medium">
-                  What options for logistics plans are available?
-                </h1>
-                <IoIosArrowForward />
-              </div>
-              <div className="flex items-center justify-between py-2 cursor-pointer">
-                <h1 className="text-lg font-medium">
-                  Can i specify a delivery date when ordering?
-                </h1>
-                <IoIosArrowForward />
-              </div>
+              <MyFaq />
             </div>
           </div>
           <div className="">
@@ -224,7 +177,7 @@ function Contact() {
                 </div>
               </div>
               <div className=" py-4">
-                <button className=" bg-gradient-to-r from-yellow-400 to-yellow-500 py-4 px-6 ">
+                <button className=" bg-gradient-to-r from-yellow-400 to-yellow-500 py-4 px-6 hover:scale-110 duration-300 rounded-md">
                   Contact Us
                 </button>
               </div>

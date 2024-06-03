@@ -1,35 +1,35 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
-import BgImg from "../assets/Background.jpg";
-import BgImg1 from "../assets/Background1.jpg";
+import BgImg from "../assets/Backgroundc.webp";
+import BgImg1 from "../assets/Background1.webp";
 import Icon_1 from "../assets/Icon1.svg";
 import Icon_2 from "../assets/Icon2.svg";
 import Icon_3 from "../assets/Icon3.svg";
 import Icon_4 from "../assets/Icon4.svg";
-import Image1 from "../assets/Image1.jpg";
-import Image2 from "../assets/Image2.jpg";
+import Image1 from "../assets/Image1.webp";
+import Image2 from "../assets/Image2.webp";
 import Icon_5 from "../assets/Icon5.svg";
 import Icon_6 from "../assets/Icon6.svg";
 import box from "../assets/Pattern.svg";
-import P1 from "../assets/p1.jpg";
-import P2 from "../assets/p2.jpg";
-import P3 from "../assets/p3.jpg";
-import P4 from "../assets/p4.jpg";
-import P5 from "../assets/p5.jpg";
-import Blue_Arrow from "../assets/arrow1.svg";
-import Yellow_Arrow from "../assets/arrow2.svg";
-import User_1 from "../assets/User1.png";
-import Quote from "../assets/quote.svg";
-import Star from "../assets/Star.png";
-import Img3 from "../assets/Image3.jpg";
+import P1 from "../assets/p1.webp";
+import P2 from "../assets/p2.webp";
+import P3 from "../assets/p3.webp";
+import P4 from "../assets/p4.webp";
+import P5 from "../assets/p5.webp";
+import Img3 from "../assets/Image3.webp";
 import Icon_7 from "../assets/Icon7.svg";
 import Icon_8 from "../assets/Icon8.svg";
 import Icon_9 from "../assets/Icon9.svg";
-import Expert1 from "../assets/expert1.jpg";
-import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
-import Blog1 from "../assets/Blog1.jpg";
+import Expert1 from "../assets/expert1.webp";
+import Blog1 from "../assets/Blog1.webp";
 import Calender from "../assets/calender.svg";
 import Footer from "../Footer/Footer";
+import Icon_tab from "../Components/Icon_tab";
+import Img_card from "../Components/Img_card";
+import Testimonials from "../Components/Testimonials";
+import Choose_icon from "../Components/Choose_icon";
+import Experts from "../Components/Experts";
+import Blog from "../Components/Blog";
 
 function Home() {
   return (
@@ -56,14 +56,17 @@ function Home() {
               id dapibus finibus, enim diam interdum nulla, sed laoreet risus
               lectus.
             </p>
-            <button className=" bg-gradient-to-r from-yellow-400 to-yellow-500 py-4 px-6 text-xl">
+            <button className=" bg-gradient-to-r from-yellow-400 to-yellow-500 py-4 px-6 text-xl hover:scale-110 duration-300 rounded-md">
               Explore More
             </button>
           </div>
           <div className="sm:w-2/5	bg-gray-500"></div>
         </div>
       </div>
-      <div className="flex items-center justify-evenly w-[80%] m-auto  flex-col sm:flex-row sm:py-14 py-10">
+
+      {/* What we do */}
+
+      <div className="flex items-center justify-evenly w-[80%] m-auto  flex-col sm:flex-row sm:py-14 py-10 ">
         <div>
           <p className="bg-gray-200 py-1 px-3 border-l-4 border-yellow-400 w-32 mb-4 sm:mb-0">
             What we do
@@ -72,61 +75,47 @@ function Home() {
             Safe & Reliable <br></br>Cargo Solutions
           </h2>
         </div>
-        <div className="w-[400px]	">
-          <div className="flex items-center gap-5 py-4">
-            <img src={Icon_1} alt="" />
-            <div className="border-l-2 pl-8">
-              <h3 className="text-2xl pb-2">Sea Transport Services</h3>
-              <p className="text-base">
-                Following the quality of our service thus having gained trust of
-                our many clients.
-              </p>
-            </div>
-          </div>
 
-          <div className="flex items-center gap-5 py-4">
-            <img src={Icon_2} alt="" />
-            <div className="border-l-2 pl-8">
-              <h3 className="text-2xl pb-2">Air Fright Services</h3>
-              <p className="text-base">
-                Following the quality of our service thus having gained trust of
-                our many clients.
-              </p>
-            </div>
-          </div>
+        <div className="w-[400px]	">
+          <Icon_tab
+            icon={Icon_1}
+            title="Sea Transport Services"
+            description="Following the quality of our service thus having gained trust of our
+          many clients."
+          />
+
+          <Icon_tab
+            icon={Icon_2}
+            title="Air Fright Services"
+            description=" Following the quality of our service thus having gained trust of
+            our many clients."
+          />
         </div>
 
         <div className="w-[400px]	">
-          <div className="flex items-center gap-5 py-4">
-            <img src={Icon_3} alt="" />
-            <div className="border-l-2 pl-8">
-              <h3 className="text-2xl pb-2">Warehousing</h3>
-              <p className="text-base">
-                Following the quality of our service thus having gained trust of
-                our many clients.
-              </p>
-            </div>
-          </div>
+          <Icon_tab
+            icon={Icon_3}
+            title="Warehousing"
+            description="Following the quality of our service thus having gained trust of
+            our many clients."
+          />
 
-          <div className="flex items-center gap-5 py-4">
-            <img src={Icon_4} alt="" />
-            <div className="border-l-2 pl-8">
-              <h3 className="text-2xl pb-2">Local Shipping Services</h3>
-              <p className="text-base">
-                Following the quality of our service thus having gained trust of
-                our many clients.
-              </p>
-            </div>
-          </div>
+          <Icon_tab
+            icon={Icon_4}
+            title="Local Shipping Services"
+            description="Following the quality of our service thus having gained trust of
+            our many clients."
+          />
         </div>
       </div>
 
       {/* Why Us*/}
 
       <div className="">
-        <img src={BgImg1} alt="" />
+        <img src={BgImg1} alt="" className="m-auto w-full -mb-52" />
       </div>
-      <div className="flex justify-center -mt-28 flex-col sm:flex-row">
+
+      <div className="flex justify-center flex-col sm:flex-row">
         <div className="sm:w-[500px] sm:px-10  px-4 bg-white pt-14">
           <p className="bg-gray-200 py-1 px-3 border-l-4 border-yellow-400 w-24">
             Why Us
@@ -156,7 +145,7 @@ function Home() {
           </div>
         </div>
         <div className="sm:px-16 px-8 bg-white sm:w-[600px] sm:py-14 py-6">
-          <img className="sm:absolute" src={Image1} alt="" />
+          <img className="sm:absolute w-[470px]" src={Image1} alt="" />
           <img
             className="sm:relative top-[250px] right-[50px]"
             src={Image2}
@@ -164,6 +153,7 @@ function Home() {
           />
         </div>
       </div>
+
       <div className="flex flex-col sm:flex-row justify-center py-10 ">
         <div className="flex flex-col sm:flex-row items-center justify-center  gap-5 font-lg py-10 px-10 border-r-2 border-t-2 border-b-2">
           <span className="text-4xl font-bold ">1294</span>
@@ -177,143 +167,57 @@ function Home() {
         </div>
       </div>
 
-      {/* Across the World */}
+      {/*Transporting Across the World */}
 
       <div className="sm:py-10 py-3">
         <h1 className="sm:text-2xl text-4xl font-bold text-[#1C1F35] text-center px-5 sm:px-0 leading-[45px]">
           Transporting Across The World
         </h1>
       </div>
+
       <div className="w-full	m-auto flex flex-wrap justify-center gap-4 items-center pb-10 ">
-        <div className="relative">
-          <img src={P1} alt="" />
-          <div className="absolute left-8 top-[300px] text-left ">
-            <p className="text-white font-bold text-xl">
-              Liquid Transportation
-            </p>
-            <span className="text-base text-[#FFB629] font-medium">
-              Premium Tankers
-            </span>
-          </div>
-        </div>
-        <div className="relative">
-          <img src={P2} alt="" />
-          <div className="absolute left-8 top-[300px] text-left ">
-            <p className="text-white font-bold text-xl">
-              Liquid Transportation
-            </p>
-            <span className="text-base text-[#FFB629] font-medium">
-              Premium Tankers
-            </span>
-          </div>
-        </div>
-        <div className="relative">
-          <img src={P3} alt="" />
-          <div className="absolute left-8 top-[300px] text-left ">
-            <p className="text-white font-bold text-xl">
-              Liquid Transportation
-            </p>
-            <span className="text-base text-[#FFB629] font-medium">
-              Premium Tankers
-            </span>
-          </div>
-        </div>
-        <div className="relative">
-          <img src={P4} alt="" />
-          <div className="absolute left-8 top-[300px] text-left ">
-            <p className="text-white font-bold text-xl">
-              Liquid Transportation
-            </p>
-            <span className="text-base text-[#FFB629] font-medium">
-              Premium Tankers
-            </span>
-          </div>
-        </div>
-        <div className="relative">
-          <img src={P5} alt="" />
-          <div className="absolute left-8 top-[300px] text-left ">
-            <p className="text-white font-bold text-xl">
-              Liquid Transportation
-            </p>
-            <span className="text-base text-[#FFB629] font-medium">
-              Premium Tankers
-            </span>
-          </div>
-        </div>
+        <Img_card
+          title="Liquid Transportation"
+          description="Premium Tankers"
+          img={P1}
+        />
+
+        <Img_card
+          title="Liquid Transportation"
+          description="Premium Tankers"
+          img={P2}
+        />
+
+        <Img_card
+          title="Liquid Transportation"
+          description="Premium Tankers"
+          img={P3}
+        />
+
+        <Img_card
+          title="Liquid Transportation"
+          description="Premium Tankers"
+          img={P4}
+        />
+
+        <Img_card
+          title="Liquid Transportation"
+          description="Premium Tankers"
+          img={P5}
+        />
       </div>
 
       <div className="bg-gradient-to-r from-yellow-500 to-yellow-300 sm:h-[320px] h-[120px] text-center flex items-center justify-center sm:-mt-[80px]">
-        <button className=" bg-gradient-to-r from-blue-900 to-blue-700 py-4 px-6 text-white ">
+        <button className=" bg-gradient-to-r from-blue-900 to-blue-700 py-4 px-6 text-white hover:scale-110 duration-300 rounded-md">
           More Work
         </button>
       </div>
 
       {/* Testimonials */}
 
-      <div className="flex items-center justify-between py-5 sm:w-[1000px] m-auto px-4 sm:px-0">
-        <div>
-          <h1 className="bg-[#F4F4F4] border-l-4 border-yellow-500 pl-2 w-28">
-            Testimonial
-          </h1>
-          <p className="text-2xl font-bold">What Our Customer Say</p>
-        </div>
-        <div className="flex">
-          <img src={Yellow_Arrow} alt="" /> <img src={Blue_Arrow} alt="" />
-        </div>
-      </div>
-
       <div className="flex items-center justify-center flex-wrap">
-        <div className="bg-[#F4F4F4] py-6 px-10 sm:w-[500px] ">
-          <div className="flex justify-evenly py-4">
-            <div className="flex items-center">
-              <img src={User_1} alt="" />
-              <p className="text-2xl font-medium px-4 leading-none">
-                Rakesh Singh
-                <br />
-                <span className="text-base font-medium">Fuel Company</span>
-              </p>
-            </div>
-            <img src={Quote} alt="" />
-          </div>
-          <p>
-            Leverage agile frameworks to provide a robust synopsis for strategy
-            foster collaborative thinking to further the overall value
-            proposition. Organically grow the holistic world view of disruptive
-            innovation via workplace diversity and empowerment.
-          </p>
-          <div className="flex gap-2 py-4">
-            <img src={Star} alt="" />
-            <img src={Star} alt="" />
-            <img src={Star} alt="" />
-            <img src={Star} alt="" />
-            <img src={Star} alt="" />
-          </div>
-        </div>
-        <div className="bg-[#091242] py-6 px-10 sm:w-[500px] flex-wrap ">
-          <div className="flex justify-evenly py-4">
-            <div className="flex items-center">
-              <img src={User_1} alt="" />
-              <p className="text-2xl font-medium px-4 leading-none text-white">
-                Rakesh Singh
-                <br />
-                <span className="text-base font-medium">Fuel Company</span>
-              </p>
-            </div>
-            <img src={Quote} alt="" />
-          </div>
-          <p className="text-white">
-            Leverage agile frameworks to provide a robust synopsis for strategy
-            foster collaborative thinking to further the overall value
-            proposition. Organically grow the holistic world view of disruptive
-            innovation via workplace diversity and empowerment.
-          </p>
-          <div className="flex gap-2 py-4">
-            <img src={Star} alt="" />
-            <img src={Star} alt="" />
-            <img src={Star} alt="" />
-            <img src={Star} alt="" />
-            <img src={Star} alt="" />
-          </div>
+        <div className="py-6 px-10 sm:w-[1000px] ">
+          <Testimonials />
         </div>
       </div>
 
@@ -338,32 +242,14 @@ function Home() {
             </p>
             <div className="flex justify-around">
               <div className="py-4">
-                <div className="flex  items-center gap-2 pb-3">
-                  <img src={Icon_7} alt="" />
-                  <span className="text-xl  items-center">Safe Package</span>
-                </div>
-                <div className="flex  items-center gap-2 pb-3">
-                  <img src={Icon_8} alt="" />
-                  <span className="text-xl  items-center">Safe Package</span>
-                </div>
-                <div className="flex  items-center gap-2 pb-3">
-                  <img src={Icon_9} alt="" />
-                  <span className="text-xl  items-center">Safe Package</span>
-                </div>
+                <Choose_icon icon={Icon_7} title="Safe Package" />
+                <Choose_icon icon={Icon_8} title="Safe Package" />
+                <Choose_icon icon={Icon_9} title="Safe Package" />
               </div>
               <div className="py-4">
-                <div className="flex  items-center gap-2 pb-3">
-                  <img src={Icon_7} alt="" />
-                  <span className="text-xl  items-center">Safe Package</span>
-                </div>
-                <div className="flex  items-center gap-2 pb-3">
-                  <img src={Icon_7} alt="" />
-                  <span className="text-xl  items-center">Safe Package</span>
-                </div>
-                <div className="flex  items-center gap-2 pb-3">
-                  <img src={Icon_7} alt="" />
-                  <span className="text-xl  items-center">Safe Package</span>
-                </div>
+                <Choose_icon icon={Icon_7} title="Safe Package" />
+                <Choose_icon icon={Icon_8} title="Safe Package" />
+                <Choose_icon icon={Icon_9} title="Safe Package" />
               </div>
             </div>
           </div>
@@ -380,42 +266,9 @@ function Home() {
           Meet Experts Team
         </p>
         <div className="flex justify-center gap-14 py-10 flex-wrap">
-          <div>
-            <img src={Expert1} alt="" />
-            <div className="h-24 bg-blue-950 text-white w-[364px] py-6 absolute">
-              <p className="font-bold text-2xl  px-6">Monika Singh</p>
-              <span className="text-base px-6">Designer</span>
-            </div>
-            <div className="bg-[#FFB629] w-[180px] h-14 relative left-[184px] py-1 -top-8 px-2 flex justify-evenly items-center">
-              <FaFacebook className="text-4xl py-1 text-[#1C1F35] " />
-              <FaLinkedin className="text-4xl py-1 text-[#1C1F35]" />
-              <FaTwitter className="text-4xl py-1 text-[#1C1F35] " />
-            </div>
-          </div>
-          <div>
-            <img src={Expert1} alt="" />
-            <div className="h-24 bg-blue-950 text-white w-[364px] py-6 absolute">
-              <p className="font-bold text-2xl  px-6">Monika Singh</p>
-              <span className="text-base px-6">Designer</span>
-            </div>
-            <div className="bg-[#FFB629] w-[180px] h-14 relative left-[184px] py-1 -top-8 px-2 flex justify-evenly items-center">
-              <FaFacebook className="text-4xl py-1 text-[#1C1F35] " />
-              <FaLinkedin className="text-4xl py-1 text-[#1C1F35]" />
-              <FaTwitter className="text-4xl py-1 text-[#1C1F35] " />
-            </div>
-          </div>
-          <div>
-            <img src={Expert1} alt="" />
-            <div className="h-24 bg-blue-950 text-white w-[364px] py-6 absolute">
-              <p className="font-bold text-2xl  px-6">Monika Singh</p>
-              <span className="text-base px-6">Designer</span>
-            </div>
-            <div className="bg-[#FFB629] w-[180px] h-14 relative left-[184px] py-1 -top-8 px-2 flex justify-evenly items-center">
-              <FaFacebook className="text-4xl py-1 text-[#1C1F35] " />
-              <FaLinkedin className="text-4xl py-1 text-[#1C1F35]" />
-              <FaTwitter className="text-4xl py-1 text-[#1C1F35] " />
-            </div>
-          </div>
+          <Experts img={Expert1} name="Monika Singh" title="Designer" />
+          <Experts img={Expert1} name="Monika Singh" title="Designer" />
+          <Experts img={Expert1} name="Monika Singh" title="Designer" />
         </div>
       </div>
 
@@ -423,8 +276,8 @@ function Home() {
 
       <div className="flex sm:flex-row flex-col py-16 justify-center gap-10 bg-[#091242] my-8 px-4 sm:px-0">
         <div className="sm:w-[500px] sm:pl-[100px]">
-          <h1 className="bg-gray-300 border-l-4 border-yellow-500 pl-2 my-1 w-20 ">
-            Contact
+          <h1 className="bg-gray-300 border-l-4 border-yellow-500 pl-2 my-1 w-28 ">
+            Contact Us
           </h1>
           <p className="text-4xl font-bold my-2 text-white">
             Get in touch with us
@@ -436,18 +289,9 @@ function Home() {
           </p>
           <div className="sm:flex hidden">
             <div className="py-4 text-white">
-              <div className="flex  items-center gap-2 pb-3">
-                <img src={Icon_7} alt="" />
-                <span className="text-xl  items-center ">Safe Package</span>
-              </div>
-              <div className="flex  items-center gap-2 pb-3">
-                <img src={Icon_8} alt="" />
-                <span className="text-xl  items-center">Safe Package</span>
-              </div>
-              <div className="flex  items-center gap-2 pb-3">
-                <img src={Icon_9} alt="" />
-                <span className="text-xl  items-center">Safe Package</span>
-              </div>
+              <Choose_icon icon={Icon_7} title="Safe Package" />
+              <Choose_icon icon={Icon_8} title="Safe Package" />
+              <Choose_icon icon={Icon_9} title="Safe Package" />
             </div>
           </div>
         </div>
@@ -503,7 +347,7 @@ function Home() {
             />
           </div>
 
-          <button className=" bg-gradient-to-r from-yellow-400 to-yellow-500 py-4 px-6">
+          <button className=" bg-gradient-to-r from-yellow-400 to-yellow-500 py-4 px-6 hover:scale-110 duration-300 rounded-md">
             Submit Message
           </button>
         </div>
@@ -519,86 +363,35 @@ function Home() {
           Our Latest News
         </p>
 
-        <div className="flex flex-col sm:flex-row sm:w-[1000px] m-auto justify-evenly  py-8 px-2 border-t-2 border-gray-300">
-          <div className=" ">
-            <img src={Blog1} alt="" />
-          </div>
-          <div className="text-center">
-            <img src={Calender} alt="" className="m-auto" />
-            <p className="text-4xl font-bold	leading-none	py-2">
-              08<p className="font-normal text-xl">September</p>
-            </p>
-          </div>
-          <div className="sm:w-1/3 border-l-2 border-gray-300 pl-5">
-            <p className="text-2xl font-semibold ">
-              Inland freight a worthy solution for your business
-            </p>
-            <p className="text-xl py-2">
-              We are dedicated in creating added value for our customers by
-              implementing modern technology in our work.
-            </p>
-            <ul className="list-disc pl-8">
-              <li>Urgent transport solutions</li>
-              <li>Reliable & experienced staffs</li>
-              <li>Urgent transport solutions</li>
-              <li>Reliable & experienced staffs</li>
-            </ul>
-          </div>
-        </div>
-        <div className="flex flex-col sm:flex-row sm:w-[1000px] m-auto justify-evenly  py-8 px-2 border-t-2 border-gray-300">
-          <div className=" ">
-            <img src={Blog1} alt="" />
-          </div>
-          <div className="text-center">
-            <img src={Calender} alt="" className="m-auto" />
-            <p className="text-4xl font-bold	leading-none	py-2">
-              12<p className="font-normal text-xl">September</p>
-            </p>
-          </div>
-          <div className="sm:w-1/3 border-l-2 border-gray-300 pl-5">
-            <p className="text-2xl font-semibold ">
-              Inland freight a worthy solution for your business
-            </p>
-            <p className="text-xl py-2">
-              We are dedicated in creating added value for our customers by
-              implementing modern technology in our work.
-            </p>
-            <ul className="list-disc pl-8">
-              <li>Urgent transport solutions</li>
-              <li>Reliable & experienced staffs</li>
-              <li>Urgent transport solutions</li>
-              <li>Reliable & experienced staffs</li>
-            </ul>
-          </div>
-        </div>
-        <div className="flex flex-col sm:flex-row sm:w-[1000px] m-auto justify-evenly  py-8 px-2 border-t-2 border-b-2 border-gray-300">
-          <div className=" ">
-            <img src={Blog1} alt="" />
-          </div>
-          <div className="text-center">
-            <img src={Calender} alt="" className="m-auto" />
-            <p className="text-4xl font-bold	leading-none	py-2">
-              25<p className="font-normal text-xl">September</p>
-            </p>
-          </div>
-          <div className="sm:w-1/3 border-l-2 border-gray-300 pl-5">
-            <p className="text-2xl font-semibold ">
-              Inland freight a worthy solution for your business
-            </p>
-            <p className="text-xl py-2">
-              We are dedicated in creating added value for our customers by
-              implementing modern technology in our work.
-            </p>
-            <ul className="list-disc pl-8">
-              <li>Urgent transport solutions</li>
-              <li>Reliable & experienced staffs</li>
-              <li>Urgent transport solutions</li>
-              <li>Reliable & experienced staffs</li>
-            </ul>
-          </div>
-        </div>
+        <Blog
+          img={Blog1}
+          date="08"
+          month="September"
+          title="Inland freight a worthy solution for your business"
+          description=" We are dedicated in creating added value for our customers by
+        implementing modern technology in our work."
+        />
+
+        <Blog
+          img={Blog1}
+          date="08"
+          month="September"
+          title="Inland freight a worthy solution for your business"
+          description=" We are dedicated in creating added value for our customers by
+        implementing modern technology in our work."
+        />
+
+        <Blog
+          img={Blog1}
+          date="08"
+          month="September"
+          title="Inland freight a worthy solution for your business"
+          description=" We are dedicated in creating added value for our customers by
+        implementing modern technology in our work."
+        />
+
         <div className=" m-auto text-center py-5">
-          <button className=" bg-[#091242] py-4 px-6 text-white">
+          <button className=" bg-[#091242] py-4 px-6 text-white hover:scale-110 duration-300 rounded-md">
             More Blog
           </button>
         </div>
@@ -607,5 +400,4 @@ function Home() {
     </div>
   );
 }
-
 export default Home;

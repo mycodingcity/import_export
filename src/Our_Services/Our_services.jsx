@@ -1,21 +1,19 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import BgImg from "../assets/our_services.jpg";
+import BgImg from "../assets/our_services.webp";
 import Icon_1 from "../assets/Icon1.svg";
 import Icon_2 from "../assets/Icon2.svg";
 import Icon_3 from "../assets/Icon3.svg";
 import Icon_4 from "../assets/Icon4.svg";
-import Image1 from "../assets/Image_4.jpg";
+import Image1 from "../assets/Image_4.webp";
 import Image2 from "../assets/Image_3.jpg";
 import Icon_5 from "../assets/Icon5.svg";
 import Icon_6 from "../assets/Icon6.svg";
-import User_1 from "../assets/User1.png";
-import Quote from "../assets/quote.svg";
 import Blue_Arrow from "../assets/arrow1.svg";
 import Yellow_Arrow from "../assets/arrow2.svg";
-import Star from "../assets/Star.png";
 import box from "../assets/Pattern.svg";
+import Testimonials from "../Components/Testimonials";
 
 function Our_services() {
   return (
@@ -121,7 +119,7 @@ function Our_services() {
           </div>
         </div>
         <div className="text-center py-10">
-          <button className=" bg-gradient-to-r from-blue-900 to-blue-700 py-4 px-6 text-white ">
+          <button className=" bg-gradient-to-r from-blue-900 to-blue-700 py-4 px-6 text-white hover:scale-110 duration-300 rounded-md">
             More Work
           </button>
         </div>
@@ -181,70 +179,9 @@ function Our_services() {
 
       {/* Testimonials */}
       <div className="py-16">
-        <div className="flex items-center justify-between py-5 sm:w-[1000px] m-auto px-4 sm:px-0">
-          <div>
-            <h1 className="bg-[#F4F4F4] border-l-4 border-yellow-500 pl-2 w-28">
-              Testimonial
-            </h1>
-            <p className="text-2xl font-bold">What Our Customer Say</p>
-          </div>
-          <div className="flex">
-            <img src={Yellow_Arrow} alt="" /> <img src={Blue_Arrow} alt="" />
-          </div>
-        </div>
-
         <div className="flex items-center justify-center flex-wrap">
-          <div className="bg-[#F4F4F4] py-6 px-10 sm:w-[500px] ">
-            <div className="flex justify-evenly py-4">
-              <div className="flex items-center">
-                <img src={User_1} alt="" />
-                <p className="text-2xl font-medium px-4 leading-none">
-                  Rakesh Singh
-                  <br />
-                  <span className="text-base font-medium">Fuel Company</span>
-                </p>
-              </div>
-              <img src={Quote} alt="" />
-            </div>
-            <p>
-              Leverage agile frameworks to provide a robust synopsis for
-              strategy foster collaborative thinking to further the overall
-              value proposition. Organically grow the holistic world view of
-              disruptive innovation via workplace diversity and empowerment.
-            </p>
-            <div className="flex gap-2 py-4">
-              <img src={Star} alt="" />
-              <img src={Star} alt="" />
-              <img src={Star} alt="" />
-              <img src={Star} alt="" />
-              <img src={Star} alt="" />
-            </div>
-          </div>
-          <div className="bg-[#091242] py-6 px-10 sm:w-[500px] flex-wrap ">
-            <div className="flex justify-evenly py-4">
-              <div className="flex items-center">
-                <img src={User_1} alt="" />
-                <p className="text-2xl font-medium px-4 leading-none text-white">
-                  Rakesh Singh
-                  <br />
-                  <span className="text-base font-medium">Fuel Company</span>
-                </p>
-              </div>
-              <img src={Quote} alt="" />
-            </div>
-            <p className="text-white">
-              Leverage agile frameworks to provide a robust synopsis for
-              strategy foster collaborative thinking to further the overall
-              value proposition. Organically grow the holistic world view of
-              disruptive innovation via workplace diversity and empowerment.
-            </p>
-            <div className="flex gap-2 py-4">
-              <img src={Star} alt="" />
-              <img src={Star} alt="" />
-              <img src={Star} alt="" />
-              <img src={Star} alt="" />
-              <img src={Star} alt="" />
-            </div>
+          <div className="py-6 px-10 sm:w-[1000px] ">
+            <Testimonials />
           </div>
         </div>
       </div>

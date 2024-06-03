@@ -69,8 +69,8 @@ function Navbar() {
               to="/"
               className={(e) => {
                 return e.isActive
-                  ? "border-b-2 pb-1 border-red-600  "
-                  : " pb-1 border-red-600 transition duration-300 ease-in-out hover:border-b-2";
+                  ? "border-b-2 pb-1 border-[#FFB82B] w-16 sm:w-auto"
+                  : " pb-1 border-[#FFB82B] transition duration-300 ease-in-out hover:border-b-2";
               }}
             >
               Home
@@ -82,8 +82,8 @@ function Navbar() {
               to="/services"
               className={(e) => {
                 return e.isActive
-                  ? "border-b-2 pb-1 border-red-600  "
-                  : " pb-1 border-red-600 transition duration-300 ease-in-out hover:border-b-2";
+                  ? "border-b-2 pb-1 border-[#FFB82B] w-20 sm:w-auto "
+                  : " pb-1 border-[#FFB82B] transition duration-300 ease-in-out hover:border-b-2";
               }}
             >
               Services
@@ -95,8 +95,8 @@ function Navbar() {
               to="/contact"
               className={(e) => {
                 return e.isActive
-                  ? "border-b-2 pb-1 border-red-600  "
-                  : " pb-1 border-red-600 transition duration-300 ease-in-out hover:border-b-2";
+                  ? "border-b-2 pb-1 border-[#FFB82B]  w-20 sm:w-auto"
+                  : " pb-1 border-[#FFB82B] transition duration-300 ease-in-out hover:border-b-2  ";
               }}
             >
               Contact
@@ -106,13 +106,13 @@ function Navbar() {
             </button>
           </div>
           <div className="text-white flex sm:gap-3 items-center gap-[200px]">
-            <div className="px-5 sm:flex gap-3 sm:items-center hidden">
+            <div className="px-5 sm:flex gap-3 sm:items-center hidden text-xl cursor-pointer">
               <FaInstagram />
               <FaFacebook />
               <FaLinkedin />
               <FaTwitter />
             </div>
-            <button className="bg-white text-black py-4 px-4 hidden sm:block">
+            <button className="bg-white text-black py-4 px-4 hidden sm:block hover:scale-110 duration-300 ">
               Request Quote
             </button>
           </div>

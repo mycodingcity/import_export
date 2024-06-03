@@ -1,5 +1,5 @@
 import React from "react";
-import FooterImg from "../assets/footer.jpg";
+import FooterImg from "../assets/footer.webp";
 import logo from "../assets/logo.svg";
 import Icon_7 from "../assets/Icon7.svg";
 import Icon_8 from "../assets/Icon8.svg";
@@ -9,7 +9,7 @@ function Footer() {
   return (
     <div>
       <div>
-        <img src={FooterImg} alt="" />
+        <img src={FooterImg} alt="" className="m-auto w-full" />
       </div>
       <div className="bg-slate-500  ">
         <div className="flex items-flex-start justify-evenly sm:text-2xl text-xl font-bold text-white  ">
@@ -57,7 +57,7 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex justify-evenly sm:gap-[200px]">
+          <div className="flex justify-evenly sm:gap-[200px] cursor-pointer">
             <div>
               <ul className="font-normal text-base list-none">
                 <li className="py-2">About Us</li>
@@ -89,19 +89,19 @@ function Footer() {
               />
             </div>
             <div className="flex items-center gap-3">
-              <button className=" bg-gradient-to-r from-yellow-400 to-yellow-500 py-4 px-5 text-base font-normal ">
+              <button className=" bg-gradient-to-r from-yellow-400 to-yellow-500 py-4 px-5 text-base font-normal hover:scale-110 duration-300 rounded-md ">
                 Submit Message
               </button>
-              <FaFacebook />
-              <FaInstagram />
-              <FaLinkedin />
+              <FaFacebook className="hover:scale-110 duration-300 rounded-md cursor-pointer" />
+              <FaInstagram className="hover:scale-110 duration-300 rounded-md cursor-pointer" />
+              <FaLinkedin className="hover:scale-110 duration-300 rounded-md cursor-pointer" />
             </div>
           </div>
         </div>
       </div>
       <div className="flex flex-col sm:flex-row justify-around py-3 bg-[#091242] text-white border-t-2 text-center">
         <p>Copyright 2024 © Coding City | Designed by Coding City</p>
-        <ul className="flex gap-8 justify-center py-2 sm:py-0">
+        <ul className="flex gap-8 justify-center py-2 sm:py-0 cursor-pointer">
           <li>Style Guide</li>
           <li>Licenses</li>
           <li>Changelog</li>
