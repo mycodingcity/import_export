@@ -76,7 +76,7 @@ function Home() {
           </h2>
         </div>
 
-        <div className="w-[400px]	">
+        <div className="w-[400px]	sm:px-0 px-6">
           <Icon_tab
             icon={Icon_1}
             title="Sea Transport Services"
@@ -92,7 +92,7 @@ function Home() {
           />
         </div>
 
-        <div className="w-[400px]	">
+        <div className="w-[400px]	sm:px-0 px-6">
           <Icon_tab
             icon={Icon_3}
             title="Warehousing"
@@ -101,7 +101,7 @@ function Home() {
           />
 
           <Icon_tab
-            icon={Icon_4}
+            icon={Icon_4} 
             title="Local Shipping Services"
             description="Following the quality of our service thus having gained trust of
             our many clients."
@@ -112,7 +112,7 @@ function Home() {
       {/* Why Us*/}
 
       <div className="">
-        <img src={BgImg1} alt="" className="m-auto w-full -mb-52" />
+        <img src={BgImg1} alt="" className="m-auto w-full mb-0 sm:-mb-52" />
       </div>
 
       <div className="flex justify-center flex-col sm:flex-row">
@@ -216,7 +216,7 @@ function Home() {
       {/* Testimonials */}
 
       <div className="flex items-center justify-center flex-wrap">
-        <div className="py-6 px-10 sm:w-[1000px] ">
+        <div className="py-6 px-10 sm:w-[1000px] w-[500px]">
           <Testimonials />
         </div>
       </div>

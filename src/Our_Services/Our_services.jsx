@@ -10,8 +10,6 @@ import Image1 from "../assets/Image_4.webp";
 import Image2 from "../assets/Image_3.jpg";
 import Icon_5 from "../assets/Icon5.svg";
 import Icon_6 from "../assets/Icon6.svg";
-import Blue_Arrow from "../assets/arrow1.svg";
-import Yellow_Arrow from "../assets/arrow2.svg";
 import box from "../assets/Pattern.svg";
 import Testimonials from "../Components/Testimonials";
 
@@ -46,9 +44,9 @@ function Our_services() {
             Our Logistics Services
           </h2>
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center flex-col sm:flex-row">
           <div>
-            <div className=" gap-5 py-4 px-6">
+            <div className=" gap-5 py-4 px-0 sm:px-6">
               <img src={Icon_1} alt="" />
               <div className="pt-2">
                 <h3 className="text-2xl pb-2">Sea Transport Services</h3>
@@ -59,7 +57,7 @@ function Our_services() {
               </div>
             </div>
 
-            <div className=" gap-5 py-4 px-6">
+            <div className=" gap-5 py-4 px-0 sm:px-6">
               <img src={Icon_1} alt="" />
               <div className="pt-2">
                 <h3 className="text-2xl pb-2">Sea Transport Services</h3>
@@ -72,7 +70,7 @@ function Our_services() {
           </div>
 
           <div>
-            <div className=" gap-5 py-4 px-6">
+            <div className=" gap-5 py-4 px-0 sm:px-6">
               <img src={Icon_1} alt="" />
               <div className="pt-2">
                 <h3 className="text-2xl pb-2">Sea Transport Services</h3>
@@ -83,7 +81,7 @@ function Our_services() {
               </div>
             </div>
 
-            <div className="gap-5 py-4 px-6">
+            <div className="gap-5 py-4 px-0 sm:px-6">
               <img src={Icon_2} alt="" />
               <div className="pt-2">
                 <h3 className="text-2xl pb-2">Air Fright Services</h3>
@@ -95,7 +93,7 @@ function Our_services() {
             </div>
           </div>
           <div>
-            <div className="gap-5 py-4 px-6">
+            <div className="gap-5 py-4 px-0 sm:px-6">
               <img src={Icon_3} alt="" />
               <div className="pt-2">
                 <h3 className="text-2xl pb-2">Warehousing</h3>
@@ -106,7 +104,7 @@ function Our_services() {
               </div>
             </div>
 
-            <div className="gap-5 py-4 px-6">
+            <div className="gap-5 py-4 px-0 sm:px-6">
               <img src={Icon_4} alt="" />
               <div className="pt-2">
                 <h3 className="text-2xl pb-2">Local Shipping Services</h3>
@@ -134,7 +132,7 @@ function Our_services() {
           <h1 className="text-2xl m-auto text-center py-2">How We Works</h1>
         </div>
         <div className="flex justify-center  flex-col sm:flex-row w-[70%] py-10 m-auto">
-          <div className="relative w-2/5">
+          <div className="relative sm:w-2/5">
             <img className="" src={Image1} alt="" />
             <img
               className="absolute bottom-0 right-0 w-[35%]"
@@ -142,7 +140,7 @@ function Our_services() {
               alt=""
             />
           </div>
-          <div className="pl-10 w-2/5">
+          <div className="sm:pl-10 sm:w-2/5">
             <div className="flex  items-center gap-5 py-5">
               <img src={Icon_5} alt="" />
               <div>
@@ -180,7 +178,7 @@ function Our_services() {
       {/* Testimonials */}
       <div className="py-16">
         <div className="flex items-center justify-center flex-wrap">
-          <div className="py-6 px-10 sm:w-[1000px] ">
+          <div className="py-6 px-10 sm:w-[1000px] w-[500px] ">
             <Testimonials />
           </div>
         </div>
