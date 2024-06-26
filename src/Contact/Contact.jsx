@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import BgImg from "../assets/our_services.webp";
+import BgImg from "../assets/our_services.jpg";
 import Icon_call from "../assets/c_call.png";
 import Icon_sms from "../assets/c_sms.png";
 import Icon_time from "../assets/c_time.png";
-import img_1 from "../assets/c_img1.webp";
+import img_1 from "../assets/c_img1.jpg";
 import img_2 from "../assets/c_img2.png";
 import img_3 from "../assets/c_img3.png";
 import img_4 from "../assets/c_img4.png";
-import { IoIosArrowForward } from "react-icons/io";
 import MyFaq from "../Components/Faq";
 
 function Contact() {

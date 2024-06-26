@@ -1,28 +1,37 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
-import BgImg from "../assets/Backgroundc.webp";
-import BgImg1 from "../assets/Background1.webp";
+import BgImg from "../assets/Backgroundc.jpg";
+import BgImg1 from "../assets/Background1.jpg";
 import Icon_1 from "../assets/Icon1.svg";
 import Icon_2 from "../assets/Icon2.svg";
 import Icon_3 from "../assets/Icon3.svg";
 import Icon_4 from "../assets/Icon4.svg";
-import Image1 from "../assets/Image1.webp";
-import Image2 from "../assets/Image2.webp";
-import Icon_5 from "../assets/Icon5.svg";
-import Icon_6 from "../assets/Icon6.svg";
+import Image1 from "../assets/container.jpg";
+import Image2 from "../assets/container_sea.jpg";
+import Icon_5 from "../assets/w_icon7.png";
+import Icon_6 from "../assets/w_icon8.png";
 import box from "../assets/Pattern.svg";
-import P1 from "../assets/p1.webp";
-import P2 from "../assets/p2.webp";
-import P3 from "../assets/p3.webp";
-import P4 from "../assets/p4.webp";
-import P5 from "../assets/p5.webp";
-import Img3 from "../assets/Image3.webp";
-import Icon_7 from "../assets/Icon7.svg";
-import Icon_8 from "../assets/Icon8.svg";
-import Icon_9 from "../assets/Icon9.svg";
-import Expert1 from "../assets/expert1.webp";
-import Blog1 from "../assets/Blog1.webp";
-import Calender from "../assets/calender.svg";
+import { CiClock1, CiMail } from "react-icons/ci";
+import { IoCallOutline } from "react-icons/io5";
+import P1 from "../assets/ff.jpg";
+import P2 from "../assets/scm.jpg";
+import P3 from "../assets/warehouse.jpg";
+import P4 from "../assets/odc.jpg";
+import P5 from "../assets/custom_clear.jpg";
+import P6 from "../assets/server.jpg";
+import Img3 from "../assets/transportation.jpg";
+import Icon_7 from "../assets/w_icon1.png";
+import Icon_8 from "../assets/w_icon2.png";
+import Icon_9 from "../assets/w_icon3.png";
+import Icon_10 from "../assets/w_icon4.png";
+import Icon_11 from "../assets/w_icon5.png";
+import Icon_12 from "../assets/w_icon6.png";
+import Expert1 from "../assets/vikram_sir.jpg";
+import Expert3 from "../assets/rajeev_sir.jpg";
+import Expert2 from "../assets/harmeet_mam.jpg";
+import Blog1 from "../assets/blog_2.jpg";
+import Blog2 from "../assets/transport_b.jpg";
+import Blog3 from "../assets/blog_3.jpg";
 import Footer from "../Footer/Footer";
 import Icon_tab from "../Components/Icon_tab";
 import Img_card from "../Components/Img_card";
@@ -51,14 +60,23 @@ function Home() {
               Your Gateway to any Destination in the World
             </h1>
             <p className="text-white text-lg py-4 hidden sm:block">
-              In augue ligula, feugiat ut nulla consequat. Ut est lacus,
-              molestie in arcu no, iaculis vehicula ipsum. Nunc faucibus, nisl
-              id dapibus finibus, enim diam interdum nulla, sed laoreet risus
-              lectus.
+              OmTrans is an innovative Freight Forwarding and logistics company
+              that is aimed at delivering best logistic practices to their
+              customers.
             </p>
-            <button className=" bg-gradient-to-r from-yellow-400 to-yellow-500 py-4 px-6 text-xl hover:scale-110 duration-300 rounded-md">
-              Explore More
-            </button>
+
+            <div>
+              <a
+                class="group relative inline-block overflow-hidden border border-[#FFDA56] px-8 py-3 focus:outline-none focus:ring"
+                href="#"
+              >
+                <span class="absolute inset-y-0 left-0 w-[2px] bg-[#FFDA56] transition-all group-hover:w-full group-active:bg-[#FFDA56]"></span>
+
+                <span class="relative text-base font-medium text-white transition-colors group-hover:text-black">
+                  Explore More
+                </span>
+              </a>
+            </div>
           </div>
           <div className="sm:w-2/5	bg-gray-500"></div>
         </div>
@@ -66,9 +84,9 @@ function Home() {
 
       {/* What we do */}
 
-      <div className="flex items-center justify-evenly w-[80%] m-auto  flex-col sm:flex-row sm:py-14 py-10 ">
+      <div className="flex items-center justify-evenly w-[90%] m-auto  flex-col sm:flex-row sm:py-14 py-10 ">
         <div>
-          <p className="bg-gray-200 py-1 px-3 border-l-4 border-yellow-400 w-32 mb-4 sm:mb-0">
+          <p className="bg-gray-200 py-1 px-3 border-l-4 border-[#E31E24] w-32 mb-4 sm:mb-0">
             What we do
           </p>
           <h2 className="text-4xl font-bold	text-[#1C1F35]	py-2">
@@ -76,35 +94,31 @@ function Home() {
           </h2>
         </div>
 
-        <div className="w-[400px]	sm:px-0 px-6">
+        <div className="w-[450px]	sm:px-0 px-6">
           <Icon_tab
             icon={Icon_1}
-            title="Sea Transport Services"
-            description="Following the quality of our service thus having gained trust of our
-          many clients."
+            title="Freight Forwarding"
+            description="OmTrans offers freight forwarding services, helping businesses move goods efficiently by air, sea, and land."
           />
 
           <Icon_tab
             icon={Icon_2}
-            title="Air Fright Services"
-            description=" Following the quality of our service thus having gained trust of
-            our many clients."
+            title="Warehousing & Distribution"
+            description="OmTrans offers warehousing and distribution services, with bonded and non-bonded facilities at major ports."
           />
         </div>
 
-        <div className="w-[400px]	sm:px-0 px-6">
+        <div className="w-[450px]	sm:px-0 px-6">
           <Icon_tab
             icon={Icon_3}
-            title="Warehousing"
-            description="Following the quality of our service thus having gained trust of
-            our many clients."
+            title="Supply Chain Management"
+            description="Efficient and strategic supply chain management can make a substantial difference in an organizations success and profitability."
           />
 
           <Icon_tab
-            icon={Icon_4} 
-            title="Local Shipping Services"
-            description="Following the quality of our service thus having gained trust of
-            our many clients."
+            icon={Icon_4}
+            title="Project Cargo & ODC Handle"
+            description="OmTrans offers specializing in transporting oversized and heavy equipment efficiently across the globe."
           />
         </div>
       </div>
@@ -117,35 +131,35 @@ function Home() {
 
       <div className="flex justify-center flex-col sm:flex-row">
         <div className="sm:w-[500px] sm:px-10  px-4 bg-white pt-14">
-          <p className="bg-gray-200 py-1 px-3 border-l-4 border-yellow-400 w-24">
+          <p className="bg-gray-200 py-1 px-3 border-l-4 border-[#E31E24] w-24">
             Why Us
           </p>
           <h3 className="sm:text-4xl text-2xl font-bold	text-[#1C1F35]	py-2">
-            We provide full range global logistics solution
+            We Provide Full Range Global Logistics Solution
           </h3>
           <p className="text-base ">
-            Leverage agile frameworks to provide a robust synopsis for strategy
-            foster collaborative thinking to further the overall value
-            proposition. Organically grow the holistic world view of disruptive
-            innovation via workplace diversity and empowerment.
+            Welcome to OmTrans, your trusted partner in global logistics
+            solutions. With an international footprint spanning over 80
+            countries, OmTrans delivers comprehensive freight forwarding
+            services through our own offices and strategic partnerships.
             <br />
             <br />
-            Organically grow the holistic world view of disruptive<br></br>
-            innovation via workplace diversity and empowerment.
+            We specialize in providing a full range of logistics services,
+            including air, ocean, and land transportation.
           </p>
-          <div className="flex  items-center gap-5 py-5">
-            <img src={Icon_5} alt="" />
+          <div className="flex  items-center  py-5">
+            <img src={Icon_5} alt="" className="pr-3" />
             <span className="text-2xl  items-center">Delivery on Time</span>
           </div>
-          <div className="flex  items-center gap-5 pb-5">
-            <img src={Icon_6} alt="" />
+          <div className="flex  items-center  pb-5">
+            <img src={Icon_6} alt="" className="pr-3" />
             <span className="text-2xl  items-center">
-              Optimized Travel Cost
+              Optimized Logistics Cost
             </span>
           </div>
         </div>
         <div className="sm:px-16 px-8 bg-white sm:w-[600px] sm:py-14 py-6">
-          <img className="sm:absolute w-[470px]" src={Image1} alt="" />
+          <img className="sm:absolute w-[500px]" src={Image1} alt="" />
           <img
             className="sm:relative top-[250px] right-[50px]"
             src={Image2}
@@ -155,62 +169,66 @@ function Home() {
       </div>
 
       <div className="flex flex-col sm:flex-row justify-center py-10 ">
-        <div className="flex flex-col sm:flex-row items-center justify-center  gap-5 font-lg py-10 px-10 border-r-2 border-t-2 border-b-2">
-          <span className="text-4xl font-bold ">1294</span>
-          <img src={box} alt="" />
-          Delivered Packages
+        <div className="flex flex-col sm:flex-row items-center justify-center   font-lg py-10 px-10 border-r-2 border-t-2 border-b-2">
+          <span className="text-4xl font-bold ">9254+</span>
+          <img src={box} alt="" className="px-3" />
+          Delivered Cargo
         </div>
-        <div className="flex flex-col sm:flex-row items-center justify-center  gap-5 font-lg py-10 px-10  border-t-2 border-b-2">
-          <span className="text-4xl font-bold	">3594</span>
-          <img src={box} alt="" />
-          Satisfied Clients
+        <div className="flex flex-col sm:flex-row items-center justify-center   font-lg py-10 px-10  border-t-2 border-b-2">
+          <span className="text-4xl font-bold	">3594+</span>
+          <img src={box} alt="" className="px-3" />
+          Satisfied Client
         </div>
       </div>
 
       {/*Transporting Across the World */}
 
-      <div className="sm:py-10 py-3">
-        <h1 className="sm:text-2xl text-4xl font-bold text-[#1C1F35] text-center px-5 sm:px-0 leading-[45px]">
-          Transporting Across The World
-        </h1>
-      </div>
+      <div className="bg-slate-100 py-5">
+        <div className="py-5">
+          <h1 className="sm:text-4xl text-2xl font-bold text-[#1C1F35] text-center px-5 sm:px-0 leading-[45px] ">
+            Our Services
+          </h1>
+        </div>
 
-      <div className="w-full	m-auto flex flex-wrap justify-center gap-4 items-center pb-10 ">
-        <Img_card
-          title="Liquid Transportation"
-          description="Premium Tankers"
-          img={P1}
-        />
+        <div className="w-[90%]	m-auto flex flex-wrap justify-center ">
+          <Img_card
+            title="Freight Forwarding"
+            description="Om Trans, one of the established logistics companies in India, acts as a freight forwarder while delivering forwarding and groupage services to its clients."
+            img={P1}
+          />
 
-        <Img_card
-          title="Liquid Transportation"
-          description="Premium Tankers"
-          img={P2}
-        />
+          <Img_card
+            title="Supply Chain Management"
+            description="Efficient and strategic supply chain management can make a substantial difference in an organizations success and profitability."
+            img={P2}
+          />
 
-        <Img_card
-          title="Liquid Transportation"
-          description="Premium Tankers"
-          img={P3}
-        />
+          <Img_card
+            title="Warehousing & Distribution"
+            description="OmTrans offers warehousing and distribution services, with bonded and non-bonded facilities at major ports.
 
-        <Img_card
-          title="Liquid Transportation"
-          description="Premium Tankers"
-          img={P4}
-        />
+            "
+            img={P3}
+          />
 
-        <Img_card
-          title="Liquid Transportation"
-          description="Premium Tankers"
-          img={P5}
-        />
-      </div>
+          <Img_card
+            title="Project Cargo & ODC Handle"
+            description="OmTrans offers specializing in transporting oversized and heavy equipment efficiently across the globe.
 
-      <div className="bg-gradient-to-r from-yellow-500 to-yellow-300 sm:h-[320px] h-[120px] text-center flex items-center justify-center sm:-mt-[80px]">
-        <button className=" bg-gradient-to-r from-blue-900 to-blue-700 py-4 px-6 text-white hover:scale-110 duration-300 rounded-md">
-          More Work
-        </button>
+            "
+            img={P4}
+          />
+          <Img_card
+            title="Custom Brokerage"
+            description="We operate under the valid license of the Customs Authority of India and help in smooth local transportation and freight services."
+            img={P5}
+          />
+          <Img_card
+            title="IT Infrastructure & Usage"
+            description="OM Logistics stands as a distinguished player in the world of IT and consumer electronics, providing specialized solutions tailored to specific needs."
+            img={P6}
+          />
+        </div>
       </div>
 
       {/* Testimonials */}
@@ -228,28 +246,32 @@ function Home() {
           <img className="sm:absolute -right-14" src={Img3} alt="" />
         </div>
         <div className="sm:w-1/2 bg-[#F4F4F4] py-5 sm:h-[600px] flex items-center px-4 sm:px-0">
-          <div className="sm:w-[500px] sm:pl-[100px]">
-            <h1 className="bg-gray-300 border-l-4 border-yellow-500 pl-2 my-2 py-1 w-28">
-              Why Choose
+          <div className="sm:w-[550px] sm:pl-[100px]">
+            <h1 className="bg-gray-300 border-l-4 border-red-600 pl-2 my-2 py-1 w-36">
+              Why Choose Us
             </h1>
             <p className="text-4xl font-bold my-4">
-              We create opportunity to reach potential
+              We Create Opportunity to Reach Potential
             </p>
             <p>
-              Leverage agile frameworks to provide a robust synopsis for
-              strategy foster collaborative thinking to further the overall
-              value proposition.
+              With 21 years of industry experience, we are committed to
+              providing exceptional service and ensuring your cargo reaches its
+              destination safely and on time. Choose OmTrans for a hassle-free
+              logistics experience.
             </p>
-            <div className="flex justify-around">
-              <div className="py-4">
-                <Choose_icon icon={Icon_7} title="Safe Package" />
-                <Choose_icon icon={Icon_8} title="Safe Package" />
-                <Choose_icon icon={Icon_9} title="Safe Package" />
+            <div className="flex justify-center">
+              <div className="py-4 ">
+                <Choose_icon icon={Icon_7} title="Connectivity Options" />
+                <Choose_icon icon={Icon_8} title="Safe Cargo Delivery" />
+                <Choose_icon icon={Icon_9} title="24x7 Availability" />
               </div>
-              <div className="py-4">
-                <Choose_icon icon={Icon_7} title="Safe Package" />
-                <Choose_icon icon={Icon_8} title="Safe Package" />
-                <Choose_icon icon={Icon_9} title="Safe Package" />
+              <div className="py-4 ">
+                <Choose_icon icon={Icon_10} title="No Hiddin Costs" />
+                <Choose_icon icon={Icon_11} title="Inventory Management " />
+                <Choose_icon
+                  icon={Icon_12}
+                  title=" Experienced Logistics Professional"
+                />
               </div>
             </div>
           </div>
@@ -259,16 +281,24 @@ function Home() {
       {/* Meet Our Team*/}
 
       <div>
-        <h1 className="bg-gray-300 border-l-4 border-yellow-500  my-2 text-center w-40 m-auto">
-          The Transporters
+        <h1 className="bg-gray-300 border-l-4 border-red-600  my-2 text-center w-40 m-auto">
+          Core Members
         </h1>
         <p className="text-4xl font-bold my-4 text-center text-[#1C1F35] ">
-          Meet Experts Team
+          Meet OmTrans Team
         </p>
-        <div className="flex justify-center gap-14 py-10 flex-wrap">
-          <Experts img={Expert1} name="Monika Singh" title="Designer" />
-          <Experts img={Expert1} name="Monika Singh" title="Designer" />
-          <Experts img={Expert1} name="Monika Singh" title="Designer" />
+        <div className="flex justify-center  py-10 flex-wrap">
+          <Experts
+            img={Expert1}
+            name="Mr. Vikram Garg"
+            title="Director, OmTrans"
+          />
+          <Experts img={Expert2} name="Mrs. Harmeet Kaur" title="VP, OmTrans" />
+          <Experts
+            img={Expert3}
+            name="Mr. Rajeev Aggrawal"
+            title="DGM, OmTrans"
+          />
         </div>
       </div>
 
@@ -276,22 +306,37 @@ function Home() {
 
       <div className="flex sm:flex-row flex-col py-16 justify-center gap-10 bg-[#091242] my-8 px-4 sm:px-0">
         <div className="sm:w-[500px] sm:pl-[100px]">
-          <h1 className="bg-gray-300 border-l-4 border-yellow-500 pl-2 my-1 w-28 ">
+          <h1 className="bg-gray-300 border-l-4 border-red-600 pl-2 my-1 w-28 ">
             Contact Us
           </h1>
           <p className="text-4xl font-bold my-2 text-white">
-            Get in touch with us
+            Get in Touch With Us
           </p>
           <p className="text-white">
-            Leverage agile frameworks to provide a robust synopsis for strategy
-            foster collaborative thinking to further the overall value
-            proposition.
+            We're here to assist you with all your logistics and freight
+            forwarding needs. Whether you have a question, need a quote, or
+            require support, our team of experts is ready to help.
           </p>
           <div className="sm:flex hidden">
-            <div className="py-4 text-white">
-              <Choose_icon icon={Icon_7} title="Safe Package" />
-              <Choose_icon icon={Icon_8} title="Safe Package" />
-              <Choose_icon icon={Icon_9} title="Safe Package" />
+            <div className="py-2 text-white">
+              <div className=" flex items-center  text-white  py-2">
+                <div className="bg-[#273270] py-3 px-3 rounded-full mr-3">
+                  <CiClock1 className=" text-[#F6B426] text-2xl" />
+                </div>
+                Mon - Sat 9:30 - 06:00 <br></br>Sunday Closed
+              </div>
+              <div className=" flex items-center  text-white  py-2">
+                <div className="bg-[#273270] py-3 px-3 rounded-full mr-3">
+                  <CiMail className=" text-[#F6B426] text-2xl" />
+                </div>
+                Email <br></br>info@omtrans.in
+              </div>
+              <div className=" flex items-center  text-white  py-2">
+                <div className="bg-[#273270] py-3 px-3 rounded-full mr-3">
+                  <IoCallOutline className=" text-[#F6B426] text-2xl" />
+                </div>
+                Call Us<br></br>+91-11-48316700
+              </div>
             </div>
           </div>
         </div>
@@ -347,7 +392,7 @@ function Home() {
             />
           </div>
 
-          <button className=" bg-gradient-to-r from-yellow-400 to-yellow-500 py-4 px-6 hover:scale-110 duration-300 rounded-md">
+          <button className=" bg-gray-200 py-3 px-5 hover:scale-110 duration-300 rounded-md">
             Submit Message
           </button>
         </div>
@@ -356,7 +401,7 @@ function Home() {
       {/* Our Blogs */}
 
       <div>
-        <h1 className="bg-gray-300 border-l-4 border-yellow-500  my-2 text-center w-40 m-auto ">
+        <h1 className="bg-gray-300 border-l-4 border-red-600 my-2 text-center w-36 m-auto ">
           Our Blogs
         </h1>
         <p className="text-4xl font-bold my-4 text-center text-[#1C1F35]">
@@ -365,33 +410,30 @@ function Home() {
 
         <Blog
           img={Blog1}
-          date="08"
-          month="September"
-          title="Inland freight a worthy solution for your business"
-          description=" We are dedicated in creating added value for our customers by
-        implementing modern technology in our work."
+          date="11"
+          month="November"
+          title="Delivering Oxygen concentrators from China to India by air to fight Covid."
+          description="During the second wave of Covid in India, OmTrans has successfully imported 250 oxygen concentrators from China to India in time line manner which was a great support in fighting Covid and helped in saving thousands of lives during the pandemic time."
         />
 
         <Blog
-          img={Blog1}
+          img={Blog2}
           date="08"
           month="September"
-          title="Inland freight a worthy solution for your business"
-          description=" We are dedicated in creating added value for our customers by
-        implementing modern technology in our work."
+          title="Saving Freight cost by 50%"
+          description="With having experience team OmTrans have helped their Exporters in saving 50% freight cost by moving the cargo through Break Bulk to Houston and Baltimore which was really appreciated by the Exporters. OmTrans has successfully delivered 4000 metric tonnes of cargo and monthly moving such volume of cargo to Houston & Baltimore through Break Bulk."
         />
 
         <Blog
-          img={Blog1}
-          date="08"
-          month="September"
-          title="Inland freight a worthy solution for your business"
-          description=" We are dedicated in creating added value for our customers by
-        implementing modern technology in our work."
+          img={Blog3}
+          date="15"
+          month="August"
+          title="Delivered 150 Tonnes of Medicines during Covid "
+          description="We take pride in mentioning that during the first wave of Pandemic, we moved over 50 tons of Covid related medicines to Brazil by Air freight maintained in cold chain temperature. It was a challenging task due to lockdown to handle operations at airport with negligible transportation, ground team."
         />
 
         <div className=" m-auto text-center py-5">
-          <button className=" bg-[#091242] py-4 px-6 text-white hover:scale-110 duration-300 rounded-md">
+          <button className=" bg-red-600 py-3 px-5 text-white hover:scale-110 duration-300 rounded-md">
             More Blog
           </button>
         </div>
