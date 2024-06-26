@@ -39,6 +39,7 @@ import Testimonials from "../Components/Testimonials";
 import Choose_icon from "../Components/Choose_icon";
 import Experts from "../Components/Experts";
 import Blog from "../Components/Blog";
+import TrackingForm from "../Components/TrackingForm";
 
 function Home() {
   return (
@@ -78,7 +79,7 @@ function Home() {
               </a>
             </div>
           </div>
-          <div className="sm:w-2/5	bg-gray-500"></div>
+          <div className="sm:w-2/5"><TrackingForm/></div>
         </div>
       </div>
 
