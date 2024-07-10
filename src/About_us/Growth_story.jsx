@@ -4,10 +4,16 @@ import Footer from "../Footer/Footer";
 import BgImg from "../assets/our_services.jpg";
 import TrackingForm from "../Components/TrackingForm";
 import Growth from "../Components/Growth";
-import G1 from "../assets/g1.png";
-import G2 from "../assets/g2.png";
-import G3 from "../assets/g3.png";
-import G4 from "../assets/g4.png";
+import G1 from "../assets/g1.jpg";
+import G2 from "../assets/g2.jpg";
+import G3 from "../assets/g3.jpg";
+import G4 from "../assets/g4.jpg";
+import G5 from "../assets/g5.jpg";
+import G6 from "../assets/g6.jpg";
+import G7 from "../assets/g7.jpg";
+import G8 from "../assets/g8.jpg";
+import G9 from "../assets/g9.jpg";
+import G10 from "../assets/g10.jpg";
 
 function Growth_story() {
   return (
@@ -32,22 +38,28 @@ function Growth_story() {
 
       <>
         <div className="flex m-auto">
-          <div className="w-[30%] ">
+          <div className="w-[30%] sm:block hidden">
             <div className="flex flex-col  items-center ">
-              <div className="w-40 h-40 py-4">
-                <img src={G1} alt="" className="w-20 m-auto" />
+              <div className="w-40 h-40 pt-12">
+                <img src={G1} alt="" className=" m-auto" />
               </div>
               <div className=" w-40 h-40"></div>
+              <div className="w-40 h-40"></div>
               <div className="w-40 h-40 py-4">
-                <img src={G2} alt="" className="w-20 m-auto" />
+                <img src={G2} alt="" className=" " />
               </div>
               <div className=" w-40 h-40"></div>
+              <div className="w-40 h-40"></div>
               <div className="w-40 h-40 py-4">
-                <img src={G3} alt="" className="w-20 m-auto" />
+                <img src={G3} alt="" className=" m-auto" />
               </div>
               <div className=" w-40 h-40"></div>
+              <div className="w-40 h-40"></div>
               <div className="w-40 h-40 py-4">
-                <img src={G4} alt="" className="w-20 m-auto" />
+                <img src={G4} alt="" className=" " />
+                <div className=" w-40 h-40"></div>
+                <div className=" w-40 h-40"></div>
+                <img src={G5} alt="" className=" m-auto" />
               </div>
             </div>
           </div>
@@ -234,14 +246,33 @@ function Growth_story() {
               </li>
             </ol>
           </div>
-          <div className="w-[30%] flex">
-            <div>
-              {" "}
-              <img src={G1} alt="" className="w-20" />
-            </div>
-            <div>
-              {" "}
-              <img src={G2} alt="" className="w-20" />
+          <div className="w-[30%]  sm:block hidden">
+            <div className="flex flex-col  items-center ">
+              <div className=" w-40 h-40"></div>
+              <div className="w-40 h-40 py-4">
+                <img src={G6} alt="" className=" m-auto" />
+              </div>
+              <div className=" w-40 h-40"></div>
+              <div className="w-40 h-40"></div>
+
+              <div className="w-40 h-40 py-4">
+                <img src={G7} alt="" className=" " />
+              </div>
+              <div className="w-40 h-40"></div>
+              <div className="w-40 h-40"></div>
+              <div className="w-40 h-40 py-4">
+                <img src={G8} alt="" className=" m-auto" />
+              </div>
+              <div className="w-40 h-40"></div>
+              <div className="w-40 h-40"></div>
+              <div className="w-40 h-40 py-4">
+                <img src={G9} alt="" className=" " />
+              </div>
+              <div className="w-40 h-40"></div>
+              <div className="w-40 h-40"></div>
+              <div className="w-40 h-40 py-4">
+                <img src={G10} alt="" className="m-auto" />
+              </div>
             </div>
           </div>
         </div>
