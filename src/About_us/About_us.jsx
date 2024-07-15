@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import BgImg from "../assets/our_services.jpg";
+import BgImg from "../assets/Aboutus_img.jpg";
 import TrackingForm from "../Components/TrackingForm";
 import about_us_img from "../assets/about_us_container.jpg";
 import Icon_1 from "../assets/bo_icon.jpg";
@@ -37,7 +37,10 @@ function About_us() {
           </div>
         </div>
       </div>
-      <div className="flex sm:flex-row flex-col justify-center items-center w-[90%] m-auto py-10">
+
+      {/* About */}
+
+      <div className="flex sm:flex-row flex-col justify-center items-center w-[90%] m-auto py-10 ">
         <div className="sm:w-[40%]  pr-10">
           <p className="bg-gray-200 py-1 px-3 border-l-4 border-yellow-400 w-24">
             About Us
@@ -111,33 +114,35 @@ function About_us() {
 
       {/* infrastructure */}
 
-      <div className="flex sm:flex-row flex-col-reverse justify-center items-center w-[90%] m-auto py-10">
-        <div className="sm:w-[40%] py-4 sm:py-0">
-          <img src={about_us_img_network} alt="about us image " />
-        </div>
-        <div className="sm:w-[40%] px-6">
-          <p className="bg-gray-200 py-1 px-3 border-l-4 border-yellow-400 w-24 my-2">
-            About Us
-          </p>
-          <h3 className="sm:text-4xl text-3xl font-bold	text-[#1C1F35]	 my-2">
-            Global Services
-          </h3>
-          To widely spread Indian Corporate and Multinational with globally
-          spread market OmTrans offers the following range of services.
-          <ul className="pl-6 list-disc	">
-            <li>Door-to-Door pickup and delivery all over the world.</li>
-            <li>Warehousing facilities all over the world.</li>
-            <li>Project Handling</li>
-            <li>Cargo consolidation Air/Sea.</li>
-            <li>Custom broker for Export and Import</li>
-            <li>Packing of machinery and other exim cargo.</li>
-          </ul>
+      <div className="bg-slate-100 py-4">
+        <div className="flex sm:flex-row flex-col-reverse justify-center items-center w-[90%] m-auto py-10  ">
+          <div className="sm:w-[40%] py-4 sm:py-0">
+            <img src={about_us_img_network} alt="about us image " />
+          </div>
+          <div className="sm:w-[40%] px-6">
+            <p className="bg-gray-200 py-1 px-3 border-l-4 border-yellow-400 w-24 my-2">
+              About Us
+            </p>
+            <h3 className="sm:text-4xl text-3xl font-bold	text-[#1C1F35]	 my-2">
+              Global Services
+            </h3>
+            To widely spread Indian Corporate and Multinational with globally
+            spread market OmTrans offers the following range of services.
+            <ul className="pl-6 list-disc	">
+              <li>Door-to-Door pickup and delivery all over the world.</li>
+              <li>Warehousing facilities all over the world.</li>
+              <li>Project Handling</li>
+              <li>Cargo consolidation Air/Sea.</li>
+              <li>Custom broker for Export and Import</li>
+              <li>Packing of machinery and other exim cargo.</li>
+            </ul>
+          </div>
         </div>
       </div>
 
       {/* Companies Logo*/}
 
-      <div>
+      <div className="py-3">
         <p className="sm:text-4xl text-3xl  font-bold my-4 text-center text-[#1C1F35] ">
           Associate Companies
         </p>
@@ -146,78 +151,83 @@ function About_us() {
 
       {/* Certifications */}
 
-      <div className="w-[90%] m-auto py-10">
-        <h3 className="sm:text-4xl text-3xl font-bold	text-[#1C1F35]	 py-4 text-center">
-          Certifications
-        </h3>
-        <div className="text-base">
-          <p>
-            <b>OM TRANS LOGISTICS LIMITED</b> has implemented Integrated
-            Management System, under which following standards has been adopted
-          </p>
-          <br />
-          <p>
-            <b>An ISO 9001:2015 Quality Management System: </b> We truly
-            committed to providing our customers with the very best services. In
-            whatever we do, we will consistently strive to meet & exceed
-            customer expectations and continually improve the effectiveness of
-            our Management System. Excellence, Quality, innovation and
-            continuous improvement are a permanent objection of our
-            organization.
-          </p>
-          <br />
-          <p>
-            <b> An ISO 14001:2015 Environmental Management System:</b> We assure
-            to adopt measures that will help in protecting the environment and
-            safeguarding our natural resources.
-          </p>
-          <br />
-          <p>
-            <b>
-              An ISO 45001:2018 Occupational Health & Safety Management System:
-            </b>
-            We assure to provide healthy & safe environment in our workplaces by
-            complying with all applicable Healthy & Safety, legal and other
-            requirements.
-          </p>
-          <br />
-          <p>
-            <b> An ISO 37001:2016 Anti Bribery Management System: </b> We
-            committed to conducting lawful, ethical business with integrity as
-            part of this commitment. All forms of bribery and corruption are
-            unacceptable and are not to be tolerated. We comply with Anti
-            Bribery laws that are applicable to our organization.
-          </p>
-          <br />
-        </div>
-        <div className="flex py-3 flex-wrap w-[90%] m-auto justify-evenly">
-          <img
-            src={certificate_1}
-            alt=""
-            className="w-48 shadow-lg	my-2 cursor-pointer hover:scale-110 duration-200"
-          />
-          <img
-            src={certificate_2}
-            alt=""
-            className="w-48 shadow-lg	my-2 cursor-pointer hover:scale-110 duration-200"
-          />
-          <img
-            src={certificate_3}
-            alt=""
-            className="w-48 shadow-lg	my-2 cursor-pointer hover:scale-110 duration-200"
-          />
-          <img
-            src={certificate_4}
-            alt=""
-            className="w-48 shadow-lg	my-2 cursor-pointer hover:scale-110 duration-200"
-          />
-          <img
-            src={certificate_5}
-            alt=""
-            className="w-48 shadow-lg	my-2 cursor-pointer hover:scale-110 duration-200"
-          />
+      <div className="bg-slate-100">
+        <div className="w-[90%] m-auto py-10">
+          <h3 className="sm:text-4xl text-3xl font-bold	text-[#1C1F35]	 py-4 text-center">
+            Certifications
+          </h3>
+          <div className="text-base">
+            <p>
+              <b>OM TRANS LOGISTICS LIMITED</b> has implemented Integrated
+              Management System, under which following standards has been
+              adopted
+            </p>
+            <br />
+            <p>
+              <b>An ISO 9001:2015 Quality Management System: </b> We truly
+              committed to providing our customers with the very best services.
+              In whatever we do, we will consistently strive to meet & exceed
+              customer expectations and continually improve the effectiveness of
+              our Management System. Excellence, Quality, innovation and
+              continuous improvement are a permanent objection of our
+              organization.
+            </p>
+            <br />
+            <p>
+              <b> An ISO 14001:2015 Environmental Management System:</b> We
+              assure to adopt measures that will help in protecting the
+              environment and safeguarding our natural resources.
+            </p>
+            <br />
+            <p>
+              <b>
+                An ISO 45001:2018 Occupational Health & Safety Management
+                System:
+              </b>
+              We assure to provide healthy & safe environment in our workplaces
+              by complying with all applicable Healthy & Safety, legal and other
+              requirements.
+            </p>
+            <br />
+            <p>
+              <b> An ISO 37001:2016 Anti Bribery Management System: </b> We
+              committed to conducting lawful, ethical business with integrity as
+              part of this commitment. All forms of bribery and corruption are
+              unacceptable and are not to be tolerated. We comply with Anti
+              Bribery laws that are applicable to our organization.
+            </p>
+            <br />
+          </div>
+          <div className="flex py-3 flex-wrap w-[90%] m-auto justify-evenly">
+            <img
+              src={certificate_1}
+              alt=""
+              className="w-48 shadow-lg	my-2 cursor-pointer hover:scale-110 duration-200 h-full"
+            />
+            <img
+              src={certificate_2}
+              alt=""
+              className="w-48 shadow-lg	my-2 cursor-pointer hover:scale-110 duration-200 h-full"
+            />
+            <img
+              src={certificate_3}
+              alt=""
+              className="w-48 shadow-lg	my-2 cursor-pointer hover:scale-110 duration-200 h-full"
+            />
+            <img
+              src={certificate_4}
+              alt=""
+              className="w-48 shadow-lg	my-2 cursor-pointer hover:scale-110 duration-200 h-full"
+            />
+            <img
+              src={certificate_5}
+              alt=""
+              className="w-48 shadow-lg	my-2 cursor-pointer hover:scale-110 duration-200 h-full"
+            />
+          </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );

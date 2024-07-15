@@ -1,12 +1,13 @@
 import React from "react";
+import Icon_call from "../assets/phoneno.png";
+import Icon_sms from "../assets/email.png";
+import Icon_location from "../assets/location.png";
 
 function QuoteForm() {
   return (
-    <div>
-      <div className="bg-[#091242] sm:w-[800px] m-auto my-8 py-16  ">
-        <p className="bg-gray-200 py-1 px-3 border-l-4 border-yellow-400 w-32 mb-4 sm:mb-0 text-center m-auto">
-          What we do
-        </p>
+    <div className="w-full h-full z-50 relative ">
+      {/* <div  className="w-full h-full bg-gray-50 blur-2xl -z-20 absolute"></div> */}
+      <div className="bg-[#091242] shadow-xl shadow-slate-100/80 sm:w-[800px] m-auto my-8 py-16 rounded-lg ">
         <h2 className="text-4xl font-bold	text-white	py-2 text-center m-auto">
           Get in Touch with us
         </h2>
@@ -15,23 +16,24 @@ function QuoteForm() {
           dedicated team is here to ensure your goods reach their destination
           efficiently and safely.
         </p>
-        <div className="flex content-center justify-evenly py-4 items-center">
+        {/*  <div className="flex content-center justify-evenly py-4 items-center">
           <div>
-            <img src={Icon_call} alt="" />
-            <p className="text-white text-center">123456789</p>
+          <img src={Icon_call} alt="" className="m-auto" />
+          <p className=" text-center">+91-11-48316700</p>
           </div>
           <div className="">
-            <img src={Icon_sms} alt="" className="m-auto" />
-            <p className="text-white text-center">cc@omtrans.in</p>
+          <img src={Icon_sms} alt="" className="m-auto" />
+          <p className=" text-center">cc@omtrans.in</p>
           </div>
           <div className="text-center">
-            <img src={Icon_time} alt="" className="m-auto" />
-            <p className="text-white text-center">
-              Mon - Sat 9.00 - 18.00 <br />
-              Sunday Closed
-            </p>
+          <img src={Icon_location} alt="" className="m-auto" />
+          <p className=" text-center">
+            159, Transport Center,Punjabi <br />
+            Bagh, New Delhi-110035
+          </p>
           </div>
-        </div>
+        </div> */}
+
         <div className="flex sm:flex-row flex-col py-2 justify-center gap-10 bg-[#091242]  px-4 sm:px-0 ">
           <div className="sm:pt-2 pt-0">
             <div className="flex flex-col sm:flex-row gap-2 items-center text-white">
@@ -41,7 +43,7 @@ function QuoteForm() {
                   className=" sm:w-64 w-80 my-2 ring-1 focus:ring-1  placeholder:text-gray-400 placeholder:px-2 placeholder:py-1 py-2 px-2 bg-transparent"
                   type="text"
                   name="username"
-                  placeholder="User Name"
+                  placeholder="Name"
                 />
               </div>
               <div className="sm:pl-3">
@@ -86,7 +88,7 @@ function QuoteForm() {
             </div>
 
             <div className="m-auto text-center py-4">
-              <button className=" bg-gradient-to-r from-yellow-400 to-yellow-500 py-4 px-6 hover:scale-110 duration-300 rounded-md">
+              <button className=" bg-gray-200 py-3 px-5 hover:scale-110 duration-300 rounded-md text-black">
                 Submit Message
               </button>
             </div>

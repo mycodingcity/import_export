@@ -171,12 +171,12 @@ function Home() {
       <div className="flex flex-col sm:flex-row justify-center py-10 ">
         <div className="flex flex-col sm:flex-row items-center justify-center   font-lg py-10 px-10 border-r-2 border-t-2 border-b-2">
           <span className="text-4xl font-bold ">9254+</span>
-          <img src={box} alt="" className="px-3" />
+          <img src={box} alt="Logistics Company" className="px-3" />
           Delivered Cargo
         </div>
         <div className="flex flex-col sm:flex-row items-center justify-center   font-lg py-10 px-10  border-t-2 border-b-2">
           <span className="text-4xl font-bold	">3594+</span>
-          <img src={box} alt="" className="px-3" />
+          <img src={box} alt="Logistics Company" className="px-3" />
           Satisfied Client
         </div>
       </div>

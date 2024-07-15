@@ -7,11 +7,22 @@ import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import { NavLink } from "react-router-dom";
+import Quote_Form from "../Components/QuoteForm";
+import { RxCrossCircled } from "react-icons/rx";
 
 function Navbar() {
   const [showNav, setShowNav] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const [serivcesdropdown, servicessetDropdown] = useState(false);
+  const [quoteform, setQuoteform] = useState(false);
+
+  const showQuote = () => {
+    setQuoteform(true);
+  };
+
+  const removeQuote = () => {
+    setQuoteform(false);
+  };
 
   const toggleNav = () => {
     setShowNav(!showNav);
@@ -88,7 +99,7 @@ function Navbar() {
             </div>
             <ul
               className={`sm:absolute  bg-[#091242] text-white w-40  text-base rounded-md ${
-                dropdown ? "block" : "hidden"
+                dropdown ? "block " : "hidden  "
               }`}
             >
               <li className="px-4 py-2 hover:bg-[#FFB82B] duration-200">
@@ -99,6 +110,9 @@ function Navbar() {
               </li>
               <li className="px-4 py-2 hover:bg-[#FFB82B] duration-200">
                 <NavLink to="/growth_story">Our Growth Story</NavLink>
+              </li>
+              <li className="px-4 py-2 hover:bg-[#FFB82B] duration-200">
+                <NavLink to="/learning_module">Learning Module</NavLink>
               </li>
             </ul>
           </div>
@@ -163,9 +177,19 @@ function Navbar() {
             <FaFacebook className="hover:text-red-600 cursor-pointer duration-200" />
             <FaLinkedin className="hover:text-red-600 cursor-pointer duration-200" />
           </div>
-          <button className="hidden sm:block bg-white text-black py-3 px-4  hover:bg-[#E31E24] hover:text-white duration-200">
-            Request Quote
-          </button>
+          <div className="relative">
+      <button
+        onClick={showQuote}
+        className="hidden sm:block bg-white text-black py-3 px-4 hover:bg-[#E31E24] hover:text-white duration-200"
+      >
+        Request Quote
+      </button>
+      {quoteform && (
+        <div className="fixed inset-0 flex justify-center items-center z-40 ">
+          <Quote_Form /> <RxCrossCircled className="text-4xl absolute z-50 top-14 cursor-pointer hover:scale-125 duration-200"  onClick={removeQuote}/>
+        </div>
+      )}
+    </div>
         </div>
       </div>
     </div>

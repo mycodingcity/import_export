@@ -215,13 +215,13 @@ function Growth_story() {
                       />
                     </svg>
                   </div>
-                  <div className="mb-10 sm:w-[400px] w-[300px] ml-6 block max-w-md rounded-lg bg-gray-100 p-6 shadow-md shadow-black/5 dark:bg-neutral-700 dark:shadow-black/10">
+                  <div className="mb-10 sm:w-[400px] w-[300px] ml-6 block max-w-md rounded-lg bg-gray-100 p-6 shadow-md">
                     <div className="mb-4 flex justify-between">
                       <p className="text-xl font-medium	 text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700">
                         2023
                       </p>
                     </div>
-                    <p className="mb-6 text-neutral-700 dark:text-neutral-200">
+                    <p className="mb-6 text-neutral-700 dark:text-neutral-700">
                       <>
                         OmTrans Joint Venture with
                         <b> Seair Links co. LTD (SEAIR) Vietnam </b>

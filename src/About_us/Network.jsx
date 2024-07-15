@@ -45,7 +45,7 @@ const Network = () => {
 
       <div className="relative">
         <div className="relative sm:h-[688px]  h-[250px] my-10">
-          <div className="absolute flex justify-center">
+          <div className="absolute left-[10%] right-[10%]">
             <img className="max-w-full h-auto" src={Bg_map} alt="World Map" />
 
             <img
@@ -106,17 +106,17 @@ const Network = () => {
 
             {hoveredBox === 1 && (
               <div className="absolute sm:w-[230px] sm:h-[140px] w-[190px] h-[130px] sm:p-2.5 p-2 bg-blue-500 rounded-lg sm:right-[14%]  right-[3%] bottom-[50%] sm:bottom-[44%]">
-                <p className="text-white sm:text-sm text-xs font-semibold flex items-center gap-2">
+                <p className="text-white sm:text-sm text-xs font-semibold flex items-center ">
                   <img
-                    className="w-4"
+                    className="w-4 mr-2"
                     src={singapore_flag_icon}
                     alt="Singapore Flag"
                   />
                   OmTrans in Singapore
                 </p>
-                <p className="text-white sm:text-sm text-xs flex items-center gap-1">
+                <p className="text-white sm:text-sm text-xs flex items-center ">
                   <svg
-                    className="w-5 text-red-600"
+                    className="w-5 mr-2 text-red-600"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -132,9 +132,9 @@ const Network = () => {
                   </svg>
                   +91-123456789
                 </p>
-                <p className="text-white sm:text-sm text-xs flex items-center gap-1">
+                <p className="text-white sm:text-sm text-xs flex items-center ">
                   <svg
-                    className="w-5 text-red-600"
+                    className="w-5 mr-2 text-red-600"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -149,9 +149,9 @@ const Network = () => {
                   </svg>
                   info@omtrans.in
                 </p>
-                <p className="text-white sm:text-sm text-xs flex items-center gap-1">
+                <p className="text-white sm:text-sm text-xs flex items-center ">
                   <svg
-                    className="w-16 text-red-600"
+                    className="w-16 mr-2 text-red-600"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -182,17 +182,17 @@ const Network = () => {
 
             {hoveredBox === 2 && (
               <div className="absolute sm:w-[230px] sm:h-[140px] w-[190px] h-[130px] sm:p-2.5 p-2 bg-blue-500 rounded-lg right-[1%] bottom-[65%] sm:right-[7%] sm:bottom-[60%]">
-                <p className="text-white sm:text-sm text-xs font-semibold flex items-center gap-2">
+                <p className="text-white sm:text-sm text-xs font-semibold flex items-center ">
                   <img
-                    className="w-4"
+                    className="w-4 mr-2"
                     src={south_korea_flag_icon}
                     alt="Singapore Flag"
                   />
                   OmTrans in South Korea
                 </p>
-                <p className="text-white sm:text-sm text-xs flex items-center gap-1">
+                <p className="text-white sm:text-sm text-xs flex items-center ">
                   <svg
-                    className="w-5 text-red-600"
+                    className="w-5 mr-2 text-red-600"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -208,9 +208,9 @@ const Network = () => {
                   </svg>
                   +91-123456789
                 </p>
-                <p className="text-white sm:text-sm text-xs flex items-center gap-1">
+                <p className="text-white sm:text-sm text-xs flex items-center ">
                   <svg
-                    className="w-5 text-red-600"
+                    className="w-5 mr-2 text-red-600"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -225,9 +225,9 @@ const Network = () => {
                   </svg>
                   info@omtrans.in
                 </p>
-                <p className="text-white sm:text-sm text-xs flex items-center gap-1">
+                <p className="text-white sm:text-sm text-xs flex items-center ">
                   <svg
-                    className="w-16 text-red-600"
+                    className="w-16 mr-2 text-red-600"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -258,13 +258,17 @@ const Network = () => {
 
             {hoveredBox === 3 && (
               <div className="absolute w-[230px] h-[150px] p-2.5 bg-blue-500 rounded-lg right-[6%] bottom-[61%]">
-                <p className="text-white text-sm font-semibold flex items-center gap-2">
-                  <img className="w-4" src={japan_flag_icon} alt="Japan Flag" />
+                <p className="text-white text-sm font-semibold flex items-center ">
+                  <img
+                    className="w-4 mr-2"
+                    src={japan_flag_icon}
+                    alt="Japan Flag"
+                  />
                   OmTrans in Japan
                 </p>
-                <p className="text-white text-sm flex items-center gap-1">
+                <p className="text-white text-sm flex items-center ">
                   <svg
-                    className="w-5 text-red-600"
+                    className="w-5 mr-2 text-red-600"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -280,9 +284,9 @@ const Network = () => {
                   </svg>
                   +91-123456789
                 </p>
-                <p className="text-white text-sm flex items-center gap-1">
+                <p className="text-white text-sm flex items-center ">
                   <svg
-                    className="w-5 text-red-600"
+                    className="w-5 mr-2 text-red-600"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -297,9 +301,9 @@ const Network = () => {
                   </svg>
                   info@omtrans.in
                 </p>
-                <p className="text-white text-sm flex items-center gap-1">
+                <p className="text-white text-sm flex items-center ">
                   <svg
-                    className="w-16 text-red-600"
+                    className="w-16 mr-2 text-red-600"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -330,17 +334,17 @@ const Network = () => {
 
             {hoveredBox === 4 && (
               <div className="absolute w-[230px] h-[150px] p-2.5 bg-blue-500 rounded-lg right-[11%] bottom-[54%]">
-                <p className="text-white text-sm font-semibold flex items-center gap-2">
+                <p className="text-white text-sm font-semibold flex items-center ">
                   <img
-                    className="w-4"
+                    className="w-4 mr-2"
                     src={hongkong_flag_icon}
                     alt="Hong Kong Flag"
                   />
                   OmTrans in Hong Kong
                 </p>
-                <p className="text-white text-sm flex items-center gap-1">
+                <p className="text-white text-sm flex items-center ">
                   <svg
-                    className="w-5 text-red-600"
+                    className="w-5 mr-2 text-red-600"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -356,9 +360,9 @@ const Network = () => {
                   </svg>
                   +91-123456789
                 </p>
-                <p className="text-white text-sm flex items-center gap-1">
+                <p className="text-white text-sm flex items-center ">
                   <svg
-                    className="w-5 text-red-600"
+                    className="w-5 mr-2 text-red-600"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -373,9 +377,9 @@ const Network = () => {
                   </svg>
                   info@omtrans.in
                 </p>
-                <p className="text-white text-sm flex items-center gap-1">
+                <p className="text-white text-sm flex items-center">
                   <svg
-                    className="w-16 text-red-600"
+                    className="w-16 mr-2 text-red-600"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -406,17 +410,17 @@ const Network = () => {
 
             {hoveredBox === 5 && (
               <div className="absolute w-[230px] h-[140px] p-2.5 bg-blue-500 rounded-lg right-[9%] bottom-[54%]">
-                <p className="text-white text-sm font-semibold flex items-center gap-2">
+                <p className="text-white text-sm font-semibold flex items-center ">
                   <img
-                    className="w-4"
+                    className="w-4 mr-2"
                     src={taiwan_flag_icon}
                     alt="Taiwan Flag"
                   />
                   OmTrans in Taiwan
                 </p>
-                <p className="text-white text-sm flex items-center gap-1">
+                <p className="text-white text-sm flex items-center">
                   <svg
-                    className="w-5 text-red-600"
+                    className="w-5 mr-2 text-red-600"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -432,9 +436,9 @@ const Network = () => {
                   </svg>
                   +91-123456789
                 </p>
-                <p className="text-white text-sm flex items-center gap-1">
+                <p className="text-white text-sm flex items-center ">
                   <svg
-                    className="w-5 text-red-600"
+                    className="w-5 mr-2 text-red-600"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -449,9 +453,9 @@ const Network = () => {
                   </svg>
                   info@omtrans.in
                 </p>
-                <p className="text-white text-sm flex items-center gap-1">
+                <p className="text-white text-sm flex items-center ">
                   <svg
-                    className="w-16 text-red-600"
+                    className="w-16 mr-2 text-red-600"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -482,17 +486,17 @@ const Network = () => {
 
             {hoveredBox === 6 && (
               <div className="absolute w-[230px] h-[140px] p-2.5 bg-blue-500 rounded-lg right-[14%] bottom-[61%]">
-                <p className="text-white text-sm font-semibold flex items-center gap-2">
+                <p className="text-white text-sm font-semibold flex items-center ">
                   <img
-                    className="w-4"
+                    className="w-4 mr-2"
                     src={taiwan_flag_icon}
                     alt="Taiwan Flag"
                   />
                   OmTrans in China
                 </p>
-                <p className="text-white text-sm flex items-center gap-1">
+                <p className="text-white text-sm flex items-center ">
                   <svg
-                    className="w-5 text-red-600"
+                    className="w-5  text-red-600"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -508,9 +512,9 @@ const Network = () => {
                   </svg>
                   +91-123456789
                 </p>
-                <p className="text-white text-sm flex items-center gap-1">
+                <p className="text-white text-sm flex items-center">
                   <svg
-                    className="w-5 text-red-600"
+                    className="w-5 mr-2 text-red-600"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -525,9 +529,9 @@ const Network = () => {
                   </svg>
                   info@omtrans.in
                 </p>
-                <p className="text-white text-sm flex items-center gap-1">
+                <p className="text-white text-sm flex items-center ">
                   <svg
-                    className="w-16 text-red-600"
+                    className="w-16 mr-2 text-red-600"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -557,14 +561,18 @@ const Network = () => {
             {/* UK */}
 
             {hoveredBox === 7 && (
-              <div className="absolute sm:w-[230px] sm:h-[140px] w-[190px] h-[130px] sm:p-2.5 p-2 bg-blue-500 rounded-lg top-[-38%] right-[32%] sm:top-[4%] sm:right-[47%]">
-                <p className="text-white text-sm font-semibold flex items-center gap-2">
-                  <img className="w-4" src={taiwan_flag_icon} alt="UK Flag" />
+              <div className="absolute sm:w-[230px] sm:h-[140px] w-[190px] h-[130px] sm:p-2.5 p-2 bg-blue-500 rounded-lg top-[-38%] right-[32%] sm:top-[1%] sm:right-[45%] ">
+                <p className="text-white text-sm font-semibold flex items-center ">
+                  <img
+                    className="w-4 mr-2"
+                    src={taiwan_flag_icon}
+                    alt="UK Flag"
+                  />
                   OmTrans in UK
                 </p>
-                <p className="text-white sm:text-sm text-xs flex items-center gap-1">
+                <p className="text-white sm:text-sm text-xs flex items-center ">
                   <svg
-                    className="w-5 text-red-600"
+                    className="w-5 mr-1 text-red-600"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -580,9 +588,9 @@ const Network = () => {
                   </svg>
                   +91-123456789
                 </p>
-                <p className="text-white sm:text-sm text-xs flex items-center gap-1">
+                <p className="text-white sm:text-sm text-xs flex items-center">
                   <svg
-                    className="w-5 text-red-600"
+                    className="w-5 mr-1 text-red-600"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -597,9 +605,9 @@ const Network = () => {
                   </svg>
                   info@omtrans.in
                 </p>
-                <p className="text-white sm:text-sm text-xs flex items-center gap-1">
+                <p className="text-white sm:text-sm text-xs flex items-center ">
                   <svg
-                    className="w-16 text-red-600"
+                    className="w-16 text-red-600 mr-1"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

@@ -13,6 +13,7 @@ import Supply_chain_management from "./Our_Services/Supply_chain_management.jsx"
 import Project_cargo_ODC_handle from "./Our_Services/Project_cargo_ODC_handle.jsx";
 import Warehouse_distributation from "./Our_Services/Warehouse_distributation.jsx";
 import Customs_brokerage_air_sea from "./Our_Services/Customs_brokerage_air_sea.jsx";
+import Learning_module from "./About_us/Learning_module.jsx";
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
   {
     path: "/customs_brokerage_services",
     element: <Customs_brokerage_air_sea />,
+  },
+  {
+    path: "/learning_module",
+    element: <Learning_module />,
   },
 ]);
 
