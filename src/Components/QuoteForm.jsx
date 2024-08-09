@@ -1,7 +1,4 @@
 import React from "react";
-import Icon_call from "../assets/phoneno.png";
-import Icon_sms from "../assets/email.png";
-import Icon_location from "../assets/location.png";
 
 function QuoteForm() {
   return (

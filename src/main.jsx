@@ -14,6 +14,8 @@ import Project_cargo_ODC_handle from "./Our_Services/Project_cargo_ODC_handle.js
 import Warehouse_distributation from "./Our_Services/Warehouse_distributation.jsx";
 import Customs_brokerage_air_sea from "./Our_Services/Customs_brokerage_air_sea.jsx";
 import Learning_module from "./About_us/Learning_module.jsx";
+import SingleQuote from "./Forms/SingleQuote.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -63,6 +65,10 @@ const router = createBrowserRouter([
   {
     path: "/learning_module",
     element: <Learning_module />,
+  },
+  {
+    path: "/single_quote",
+    element: <SingleQuote/>,
   },
 ]);
 

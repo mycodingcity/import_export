@@ -35,7 +35,7 @@ import Img_card from "../Components/Img_card";
 import Testimonials from "../Components/Testimonials";
 import Choose_icon from "../Components/Choose_icon";
 import Blog from "../Components/Blog";
-import TrackingForm from "../Components/TrackingForm";
+import QuoteRequest from "../Components/RateForm";
 import Companies_logo from "../Components/Companies_logo";
 
 function Home() {
@@ -50,36 +50,36 @@ function Home() {
         style={{ backgroundImage: `url(${BgImg})` }}
       >
         <div className="flex flex-col sm:flex-row items-center sm:justify-center justify-around m-auto sm:pt-28 pt-8 sm:pb-28 pb-8">
-          <div className="sm:w-2/5	w-4/5">
+          <div className="text-center">
             <p className="text-white sm:text-lg text-sm">
               Logistics & Supply Chain Solutions
             </p>
             <h1 className="text-white sm:text-[3.4vw] font-bold sm:py-2 leading-none text-4xl pt-4 pb-8">
-              Your Gateway to any Destination in the World
+              Simpliyfing Your Business
             </h1>
-            <p className="text-white text-lg py-4 hidden sm:block">
-              OmTrans is an innovative Freight Forwarding and logistics company
-              that is aimed at delivering best logistic practices to their
-              customers.
+            <p className="text-white text-xl py-4 hidden sm:block">
+              OmTrans is an innovative Freight Forwarding and Logistics Company.
             </p>
 
             <div>
               <a
-                class="group relative inline-block overflow-hidden border border-[#FFDA56] px-8 py-3 focus:outline-none focus:ring"
+                class="group relative inline-block overflow-hidden border border-[#0430A5] px-10 py-3 focus:outline-none focus:ring"
                 href="#"
               >
-                <span class="absolute inset-y-0 left-0 w-[2px] bg-[#FFDA56] transition-all group-hover:w-full group-active:bg-[#FFDA56]"></span>
+                <span class="absolute inset-y-0 left-0 w-[2px] bg-[#0430A5] transition-all group-hover:w-full group-active:bg-[#FFDA56]"></span>
 
-                <span class="relative text-base font-medium text-white transition-colors group-hover:text-black">
+                <span class="relative text-base font-medium text-white transition-colors ">
                   Explore More
                 </span>
               </a>
             </div>
           </div>
-          <div className="sm:w-2/5 sm:mx-0 mx-2 sm:py-0 py-8">
-            <TrackingForm />
-          </div>
         </div>
+      </div>
+      {/* Rate Request Form*/}
+
+      <div>
+        <QuoteRequest />
       </div>
 
       {/* What we do */}
